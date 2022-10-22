@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|css|files|fonts|images|front_page|js|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+#RewriteCond %{HTTP_REFERER} !^https://kamleshyadav.in/Eacademy_update/ [NC]
+#RewriteRule \.(gif|jpg|jpeg|mp4|mov|mkv|flv)$ - [F,L]
+IndexIgnore *

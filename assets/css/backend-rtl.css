@@ -1,0 +1,375 @@
+body.rtl {
+    text-align: right;
+}
+.rtl .text-right, .rtl .text-xl-right, .rtl .text-lg-right, .rtl .text-md-right, .rtl .text-sm-right, .rtl .text-col-right  {
+    text-align: left!important;
+}
+.rtl .ml-2, .rtl .mx-2 {
+    margin-right: .5rem!important;
+}
+/*toster*/
+.rtl .toast-top-right {
+    left: 12px;
+    right: auto;
+}
+.rtl #toast-container>.toast-error {
+    background-position: 262px;
+}
+.rtl #toast-container>div {
+    padding: 15px 50px 15px 15px;
+}
+/*radio btn*/
+.rtl .edu_radio_holder {
+    margin-right: 0;
+    margin-left: 30px;
+}
+.rtl .edu_radio_holder input[type="radio"], input[type="radio"] {
+    margin-right: 0;
+    margin-left: 10px;
+}
+/*select 2*/
+.rtl .select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
+    /*padding-left: 8px;*/
+    /*padding-right: 20px;*/
+}
+.rtl span.select2.select2-container {
+    text-align: right;
+}
+.rtl .edu_admin_option a {
+    direction: rtl;
+}
+/**********************************
+	Header CSS
+**********************************/
+.rtl .edu_header_close {
+    margin-right: 0;
+    margin-left: 30px;
+}
+.rtl .edu_admin_bar span, .rtl .edu_admin_bar.edu_admin_with_img img {
+    margin-right: 0;
+    margin-left: 15px;
+}
+.rtl .edu_admin_option {
+    padding: 15px 20px 5px;
+    right: auto;
+    left: 0;
+}
+/**********************************
+	Sidebar CSS
+**********************************/
+.rtl .edu_admin_menu > ul > li.active > a:before {
+    content: url(../images/rtl/p1.png);
+    left: 0;
+    right: auto;
+}
+.rtl .edu_admin_menu > ul > li.active > a:after {
+    content: url(../images/rtl/p2.png);
+    left: 0;
+    right: auto;
+}
+.rtl .edu_left_header, .rtl .edu_header_sidebar {
+    left: auto;
+    right: 0;
+}
+.rtl .edu_admin_header_right {
+    padding: 40px 20px 40px 0px;
+}
+.rtl .edu_admin_menu > ul > li > a {
+    border-radius: 0px 40px 40px 0px;
+}
+.rtl .edu_admin_menu > ul > li > a svg {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.rtl .edu_admin_menu ul li.has_sub_menu:after {
+    left: 16px;
+    right: auto;
+    transform: rotate(180deg);
+}
+.rtl .edu_admin_menu ul li ul.sub-menu li {
+    padding: 0 64px 0 0px;
+}
+.rtl .edu_admin_menu ul li ul.sub-menu li a, .rtl .edu_admin_menu ul li ul.sub-menu li a:visited {
+    padding: 10px 25px 10px 12px;
+}
+.rtl .edu_admin_menu ul li ul.sub-menu li a:before {
+    right: 6px;
+    left: auto;
+    transform: rotate(180deg);
+}
+.rtl .edu_admin_logo {
+    padding: 15px 75px 15px 15px;
+}
+.rtl .edu_header_closed .edu_top_header {
+    margin-right: 0;
+}
+.rtl .edu_header_close.responsive_btn {
+    margin-right: 30px;
+    margin-left: 0px;
+}
+/**********************************
+	Dashboard CSS
+**********************************/
+.rtl .edu_dash_box_data {
+    padding-right: 0;
+    padding-left: 30px;
+}
+.rtl .edu_dash_info ul li:first-child {
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+.rtl .edu_dash_info ul li:first-child:before {
+    right: auto;
+    left: 0;
+}
+.rtl .score_info_wrap .edu_title {
+    padding-left: 100px;
+    padding-right: 0;
+}
+.rtl .edu_quick_links svg {
+    margin-right: 0;
+    margin-left: 10px;
+}
+/**********************************
+	Add batch Manager CSS
+**********************************/
+.rtl .eb_subhead_icon .eb_rem_sheading {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.rtl .eb_subhead_icon {
+    margin-left: 0;
+    margin-right: 5px;
+}
+/**********************************
+	Batch Manager CSS
+**********************************/
+.rtl .edu_admin_informationdiv .table th {
+    text-align: right;
+}
+.rtl table.dataTable input[type="checkbox"] {
+    margin-right: 0;
+}
+.rtl .edu_admin_informationdiv .table tr td:first-child, .rtl .edu_admin_informationdiv .table tr th:first-child {
+    border-radius: 0 5px 5px 0;
+    padding-left: 0;
+    padding-right: 30px;
+}
+.rtl .edu_admin_informationdiv .table tr td:last-child, .rtl .edu_admin_informationdiv .table tr th:last-child {
+    border-radius: 5px 0 0 5px;
+    padding-right: 0;
+    padding-left: 30px;
+}
+.rtl .edu_admin_informationdiv .table tr td:first-child {
+    border-left: 0;
+    border-right: 1px solid #e7e7e9;
+}
+.rtl .edu_admin_informationdiv .table tr td:last-child {
+    border-right: 0;
+    border-left: 1px solid #e7e7e9;
+}
+.rtl .edu_admin_informationdiv .table tr:hover td {
+    border-color: #4267C8;
+}
+.rtl .edu_admin_informationdiv .table td {
+    text-align: right;
+}
+.rtl .edu_accord_parent > span i.eb_removeacc {
+    margin: 0 20px 0 0px;
+}
+.rtl .edu_table_wrapper .dataTables_wrapper .dataTables_filter {
+    text-align: left;
+}
+.rtl .dataTables_wrapper .dataTables_filter input, .rtl .dataTables_wrapper .dataTables_length select {
+    margin-left: auto;
+    margin-right: 20px;
+}
+.rtl .dataTables_paginate a i {
+    transform: rotate(180deg);
+}
+/**********************************
+	Subject Manager CSS
+**********************************/
+.rtl .edu_table_wrapper tbody td .chapter_wrap {
+    float: right;
+}
+.rtl .edu_table_wrapper tbody td .chapter_wrap > span {
+    float: right;
+}
+.rtl .edu_table_wrapper tbody td .chapter_wrap i {
+    text-align: left;
+}
+.rtl .mfp-content {
+    text-align: right;
+}
+.rtl .mfp-close {
+    right: auto;
+    left: 0;
+}
+.rtl .edu_popup_container button.mfp-close {
+    border-radius: 0px 0px 6px 0px;
+}
+
+/**********************************
+	Student Manager CSS
+**********************************/
+.rtl .edu_admin_informationdiv .table td i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.rtl .tbl_action_ul {
+    right: auto;
+    left: 0;
+}
+.rtl .tbl_action_ul:after {
+    right: auto;
+    left: 40px;
+}
+.rtl .tbl_action_ul {
+    transform-origin: top left;
+}
+.rtl .view_large_image {
+    margin-right: 0;
+    margin-left: 10px;
+}
+/**********************************
+	Frontend  Setting CSS
+**********************************/
+.rtl .edu_prev_img {
+    right: auto;
+    left: 2px;
+}
+.rtl .edu_detele_row_wrapper {
+    text-align: left;
+}
+/**********************************
+	Teacher Homework
+**********************************/
+.rtl .edu_extra_class p i {
+    margin: 0 0px 5px 10px;
+}
+.rtl .pxn_admin_btnsection{
+    float: right;
+}
+/**********************************
+	Student Practice Paper CSS
+**********************************/
+.rtl .edu_paper_info {
+    text-align: right!important;
+}
+/**********************************
+	Responsive CSS
+**********************************/
+@media (max-width: 1885px){
+.rtl .edu_dash_box_data {
+        padding-right: 20px;
+    }
+.rtl .edu_dash_info ul li:first-child {
+    margin-left: 12px;
+    padding-left: 12px;
+}
+}
+@media (min-width: 1400px){
+.rtl.edu_header_closed .edu_top_header {
+    margin-right: 100px;
+    margin-left: 0;
+}
+.rtl.edu_header_closed .edu_admin_content{
+    padding-right: 100px;
+    padding-left: 0;
+}
+body.edu_header_closed.rtl .edu_admin_header_right {
+    padding: 40px 20px 40px 0px;
+}
+body.edu_header_closed.rtl .edu_admin_menu > ul > li > a {
+    padding: 16px 30px 16px 15px;
+}
+body.edu_header_closed.rtl .edu_header_sidebar:hover .edu_admin_header_right .edu_admin_menu > ul > li > a {
+    padding: 16px 30px 16px 15px;
+}
+.rtl.edu_header_closed .edu_admin_logo .mini_logo {
+    padding-right: 232px;
+    padding-left: 0;
+}
+body.edu_header_closed.rtl .edu_header_sidebar:hover header.edu_left_header {
+    left: auto;
+    right: 0;
+}
+.rtl .edu_top_header {
+    margin-left: auto;
+    margin-right: 300px;
+}
+.rtl .edu_admin_content {
+    padding-right: 300px;
+    padding-left: 0;
+}
+
+}
+@media (min-width: 1440px){
+.rtl .edu_admin_content {
+    padding-right: 375px;
+    padding-left: 0;
+}
+.rtl .edu_top_header {
+    margin-right: 375px;
+    margin-left: 0;
+}
+.rtl .edu_header_closed .edu_left_header, .rtl .edu_header_closed .edu_header_sidebar {
+    right: -275px;
+    left: auto;
+}
+.rtl.edu_header_closed .edu_left_header, .rtl.edu_header_closed .edu_header_sidebar {
+    right: -275px;
+    left: 0;
+}
+body.edu_header_closed.rtl .edu_header_sidebar:hover header.edu_left_header {
+    right: 0;
+    left: auto;
+}
+
+
+
+}
+
+@media (max-width: 1439.98px) and (min-width: 1400px){
+.rtl.edu_header_closed .edu_left_header, .rtl.edu_header_closed .edu_header_sidebar {
+    left: auto;
+    right: -200px;
+}
+
+
+
+}
+@media (max-width: 1439.98px){
+.rtl .edu_admin_logo {
+    padding: 15px 25px 15px 15px;
+}
+
+@media (max-width: 1399.98px){
+.rtl .edu_left_header, .edu_header_sidebar {
+    left: auto;
+    right: -300px;
+}
+.rtl .edu_top_header {
+    margin-right: 0;
+}
+.rtl .edu_left_header, .rtl .edu_header_sidebar {
+     left: auto; 
+    right: -300px;
+}
+.rtl.edu_header_closed .edu_left_header, .rtl.edu_header_closed .edu_header_sidebar {
+    left: auto;
+    right: 0;
+}
+
+
+
+}
+@media (max-width: 767px){
+.rtl .edu_admin_option {
+    left: 0;
+    right: auto;
+}
+}

@@ -1,0 +1,263 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2020-06-22 04:52:15 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:52:15 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:52:33 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:52:33 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:59:06 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:59:06 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:59:09 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:59:09 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:59:14 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:59:14 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:59:19 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:59:19 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:59:24 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:59:24 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:59:25 --> 404 Page Not Found: api/Book/educationalVideo
+ERROR - 2020-06-22 04:59:27 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:59:27 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:59:29 --> 404 Page Not Found: api/Book/educationalVideo
+ERROR - 2020-06-22 04:59:32 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:59:32 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:59:36 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:59:36 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:59:39 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 04:59:39 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 04:59:48 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:02:16 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:03:41 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:20:29 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:21:23 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:30:36 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:31:34 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:31:42 --> Severity: Notice --> Undefined index: no_of_questions /home/themes91/public_html/ci/e-academy/application/views/admin/question_manage.php 20
+ERROR - 2020-06-22 05:31:42 --> Severity: Notice --> Undefined index: no_of_questions /home/themes91/public_html/ci/e-academy/application/views/admin/question_manage.php 95
+ERROR - 2020-06-22 05:32:09 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:33:55 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:33:56 --> 404 Page Not Found: api/Book/educationalVideo
+ERROR - 2020-06-22 05:33:57 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:33:59 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:34:02 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:38:02 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:43:45 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 05:53:56 --> Severity: Notice --> Undefined index: no_of_questions /home/themes91/public_html/ci/e-academy/application/views/admin/question_manage.php 20
+ERROR - 2020-06-22 05:53:56 --> Severity: Notice --> Undefined index: no_of_questions /home/themes91/public_html/ci/e-academy/application/views/admin/question_manage.php 95
+ERROR - 2020-06-22 05:56:26 --> Severity: Notice --> Undefined variable: teacher /home/themes91/public_html/ci/e-academy/application/views/admin/extra_classes.php 91
+ERROR - 2020-06-22 05:56:26 --> Severity: Warning --> Invalid argument supplied for foreach() /home/themes91/public_html/ci/e-academy/application/views/admin/extra_classes.php 91
+ERROR - 2020-06-22 05:56:41 --> Severity: Notice --> Undefined variable: teacher /home/themes91/public_html/ci/e-academy/application/views/admin/extra_classes.php 91
+ERROR - 2020-06-22 05:56:41 --> Severity: Warning --> Invalid argument supplied for foreach() /home/themes91/public_html/ci/e-academy/application/views/admin/extra_classes.php 91
+ERROR - 2020-06-22 05:57:27 --> Severity: Notice --> Undefined variable: teacher /home/themes91/public_html/ci/e-academy/application/views/admin/extra_classes.php 91
+ERROR - 2020-06-22 05:57:27 --> Severity: Warning --> Invalid argument supplied for foreach() /home/themes91/public_html/ci/e-academy/application/views/admin/extra_classes.php 91
+ERROR - 2020-06-22 05:57:57 --> Severity: Notice --> Undefined variable: teacher /home/themes91/public_html/ci/e-academy/application/views/admin/extra_classes.php 91
+ERROR - 2020-06-22 05:57:57 --> Severity: Warning --> Invalid argument supplied for foreach() /home/themes91/public_html/ci/e-academy/application/views/admin/extra_classes.php 91
+ERROR - 2020-06-22 06:03:42 --> Severity: Notice --> Undefined variable: teacher /home/themes91/public_html/ci/e-academy/application/views/admin/extra_classes.php 91
+ERROR - 2020-06-22 06:03:42 --> Severity: Warning --> Invalid argument supplied for foreach() /home/themes91/public_html/ci/e-academy/application/views/admin/extra_classes.php 91
+ERROR - 2020-06-22 06:05:26 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:06:57 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:06:57 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:07:51 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:07:51 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:14:56 --> Severity: Notice --> Undefined index: no_of_questions /home/themes91/public_html/ci/e-academy/application/views/admin/question_manage.php 20
+ERROR - 2020-06-22 06:14:56 --> Severity: Notice --> Undefined index: no_of_questions /home/themes91/public_html/ci/e-academy/application/views/admin/question_manage.php 95
+ERROR - 2020-06-22 06:18:48 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:18:48 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:19:21 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 06:19:22 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 06:19:22 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 06:20:18 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 06:20:18 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 06:20:18 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 06:24:51 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:24:51 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:28:19 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:28:19 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:28:44 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:28:44 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:28:48 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:28:48 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:28:53 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:28:53 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:29:18 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:46:16 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:46:18 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:50:20 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 06:50:20 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 06:50:20 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 06:57:38 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:57:38 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:57:50 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:57:50 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 06:58:00 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:58:09 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:58:15 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 06:58:20 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:58:20 --> 404 Page Not Found: api/Book/educationalVideo
+ERROR - 2020-06-22 06:58:22 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 06:58:29 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 06:58:42 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:01:17 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:01:20 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:01:24 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:01:27 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:01:38 --> 404 Page Not Found: api/Book/educationalVideo
+ERROR - 2020-06-22 07:01:42 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:04:10 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:11:30 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:14:58 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:14:59 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:15:01 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:17:14 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:17:35 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:17:39 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:18:45 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:18:50 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:18:55 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:19:00 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:19:47 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:21:19 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:21:26 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:25:07 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:25:12 --> 404 Page Not Found: api/Book/educationalVideo
+ERROR - 2020-06-22 07:25:13 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:25:16 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:30:38 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:32:42 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:35:37 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:36:02 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:37:15 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 07:37:29 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 07:40:03 --> Severity: Notice --> Undefined index: id /home/themes91/public_html/ci/e-academy/application/views/admin/video_manage.php 67
+ERROR - 2020-06-22 07:40:03 --> Severity: Notice --> Undefined index: id /home/themes91/public_html/ci/e-academy/application/views/admin/video_manage.php 67
+ERROR - 2020-06-22 07:40:03 --> Severity: Notice --> Undefined index: id /home/themes91/public_html/ci/e-academy/application/views/admin/video_manage.php 67
+ERROR - 2020-06-22 07:42:37 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 07:42:37 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 07:42:37 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 07:43:24 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 07:43:24 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 07:43:24 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 07:50:07 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 07:50:07 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 07:50:07 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 07:54:53 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 07:54:53 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 07:54:53 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:10:41 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 08:10:42 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:10:42 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:12:55 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 08:12:55 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:12:55 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:17:33 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 08:17:33 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:17:33 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:18:55 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 08:18:55 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:18:55 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:20:27 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:20:27 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 08:20:27 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 08:57:57 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 09:12:27 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 09:13:23 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 09:20:28 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 09:20:28 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 09:20:29 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 09:22:11 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 09:22:11 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 09:22:11 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 09:23:30 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 09:23:30 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 09:23:30 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 09:23:51 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 09:57:47 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:10:46 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:14:29 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:14:44 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:14:49 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:14:51 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:14:53 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 10:15:01 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:16:20 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:17:57 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:18:18 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:18:25 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:18:28 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:18:31 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 10:57:38 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 10:57:38 --> 404 Page Not Found: Assets/js
+ERROR - 2020-06-22 10:57:38 --> 404 Page Not Found: Assets/css
+ERROR - 2020-06-22 11:52:22 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 11:53:19 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 11:53:23 --> 404 Page Not Found: api/Book/educationalVideo
+ERROR - 2020-06-22 11:53:26 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 11:53:29 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 11:53:31 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 11:53:34 --> 404 Page Not Found: api/Book/viewVacancyImage
+ERROR - 2020-06-22 12:06:27 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 12:06:27 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 12:06:27 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:06:34 --> 404 Page Not Found: api/Book/educationalVideo
+ERROR - 2020-06-22 12:07:56 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 12:07:56 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:08:00 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:08:00 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 12:08:04 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 12:08:04 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:08:13 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 12:08:13 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:08:33 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:08:33 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 12:08:38 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:08:38 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 12:08:57 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:10:27 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:13:12 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:18:46 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:20:22 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:22:17 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:22:38 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:26:40 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:28:12 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:29:54 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:29:56 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:34:33 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:37:33 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:37:42 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:37:57 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:38:37 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:40:08 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:40:24 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:42:10 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:44:39 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:46:36 --> Severity: Notice --> Undefined index: no_of_questions /home/themes91/public_html/ci/e-academy/application/views/admin/question_manage.php 20
+ERROR - 2020-06-22 12:46:36 --> Severity: Notice --> Undefined index: no_of_questions /home/themes91/public_html/ci/e-academy/application/views/admin/question_manage.php 95
+ERROR - 2020-06-22 12:46:53 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:48:32 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:48:53 --> Severity: Notice --> Undefined index: no_of_questions /home/themes91/public_html/ci/e-academy/application/views/admin/question_manage.php 20
+ERROR - 2020-06-22 12:48:53 --> Severity: Notice --> Undefined index: no_of_questions /home/themes91/public_html/ci/e-academy/application/views/admin/question_manage.php 95
+ERROR - 2020-06-22 12:53:55 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:56:13 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:56:34 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:57:09 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 12:57:09 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 12:59:30 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 13:04:33 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 13:05:34 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 13:07:50 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 13:08:35 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 13:08:40 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 13:08:42 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 13:11:16 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 13:11:17 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 13:11:17 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 13:11:31 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 13:11:31 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 13:11:46 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 13:11:46 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 14:03:00 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 14:03:00 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 14:03:13 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 14:03:13 --> 404 Page Not Found: api/Welcome/update_app_used
+ERROR - 2020-06-22 14:20:34 --> 404 Page Not Found: api/Notice/show_ads
+ERROR - 2020-06-22 14:20:34 --> 404 Page Not Found: api/Welcome/update_app_used
