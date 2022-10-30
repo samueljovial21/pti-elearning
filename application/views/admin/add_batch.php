@@ -74,7 +74,8 @@
     						</div>
     					</div>
 					</div>
-					<div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <!-- Hide/Unhide Batch Type Free or Paid -->
+					<!-- <div class="col-lg-6 col-md-12 col-sm-12 col-12">
     					<div class="form-group eb_batchtype">
     						<label><?php echo html_escape($this->common->languageTranslator('ltr_batch_type'));?><sup>*</sup></label><br>
 							<div class="form-control">
@@ -97,7 +98,7 @@
     						<label><?php echo html_escape($this->common->languageTranslator('ltr_offer_price'));?><sup>*</sup></label><br>
 							<input type="text" data-valid="number" data-error="<?php echo html_escape($this->common->languageTranslator('ltr_valid_price_msg'));?>" maxlength="10" class="form-control"  placeholder="<?php echo html_escape($this->common->languageTranslator('ltr_price')).' '. $currency_code; ?> " name="batchOfferPrice"  id="batchOfferPrice" value="<?php if(!empty($batchData['batch_offer_price'])){ echo $batchData['batch_offer_price'] ;} ?>">	
     					</div>
-					</div>
+					</div> -->
 					<div class="col-lg-6 col-md-12 col-sm-12 col-12 batchPrice <?php if(!empty($batchData['batch_type']) && $batchData['batch_type']==2){ echo 'show'; }else{ echo 'hide'; } ?>">
     					   
     					<div class="form-group">

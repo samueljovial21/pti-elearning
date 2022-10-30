@@ -33,8 +33,16 @@
     							<th><?php echo html_escape($this->common->languageTranslator('ltr_start_date'));?></th>
     							<th><?php echo html_escape($this->common->languageTranslator('ltr_end_date'));?></th>
     							<th><?php echo html_escape($this->common->languageTranslator('ltr_batch_time'));?></th>
-    							<th><?php echo html_escape($this->common->languageTranslator('ltr_price'));?></th>
-    							<th><?php echo html_escape($this->common->languageTranslator('ltr_pay_mode'));?></th>
+    							<!-- <th>
+									<?php
+									/*echo html_escape($this->common->languageTranslator('ltr_price'));*/
+									?>
+								</th> -->
+    							<!-- <th>
+									<?php
+									/*echo html_escape($this->common->languageTranslator('ltr_pay_mode'));*/
+									?>
+								</th> -->
     							<th><?php echo html_escape($this->common->languageTranslator('ltr_students'));?></th>
     							<th class="no-sort"><?php echo html_escape($this->common->languageTranslator('ltr_status'));?></th>
     							<th class="no-sort"><?php echo html_escape($this->common->languageTranslator('ltr_actions'));?></th>
