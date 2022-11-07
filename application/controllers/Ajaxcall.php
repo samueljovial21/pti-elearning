@@ -1750,6 +1750,7 @@ class Ajaxcall extends CI_Controller{
                     				<path fill-rule="evenodd" fill="rgb(77 74 129)" d="M13.031,4.000 C11.944,4.000 11.062,3.104 11.062,2.000 C11.062,0.895 11.944,-0.000 13.031,-0.000 C14.119,-0.000 15.000,0.895 15.000,2.000 C15.000,3.104 14.119,4.000 13.031,4.000 ZM7.500,4.000 C6.413,4.000 5.531,3.104 5.531,2.000 C5.531,0.895 6.413,-0.000 7.500,-0.000 C8.587,-0.000 9.469,0.895 9.469,2.000 C9.469,3.104 8.587,4.000 7.500,4.000 ZM1.969,4.000 C0.881,4.000 -0.000,3.104 -0.000,2.000 C-0.000,0.895 0.881,-0.000 1.969,-0.000 C3.056,-0.000 3.937,0.895 3.937,2.000 C3.937,3.104 3.056,4.000 1.969,4.000 Z"></path>
                     				</svg>
                     				<ul class="tbl_action_ul">
+                                    <!--
                     				    <li>
                     				        <a href="'.base_url('admin/student-attendance/').$student['s_id'].'">
                     				            <span class="action_drop_icon">
@@ -1797,6 +1798,7 @@ class Ajaxcall extends CI_Controller{
                     				            '.$this->lang->line('ltr_notice').'
                     				        </a>
                     				    </li>
+                                        -->
     									<li>
                     				        <a href="'.base_url().$profile.'/doubts-ask/'.$student['s_id'].'">
                     				            <span class="action_drop_icon">
@@ -1863,6 +1865,7 @@ class Ajaxcall extends CI_Controller{
                     				<path fill-rule="evenodd" fill="rgb(77 74 129)" d="M13.031,4.000 C11.944,4.000 11.062,3.104 11.062,2.000 C11.062,0.895 11.944,-0.000 13.031,-0.000 C14.119,-0.000 15.000,0.895 15.000,2.000 C15.000,3.104 14.119,4.000 13.031,4.000 ZM7.500,4.000 C6.413,4.000 5.531,3.104 5.531,2.000 C5.531,0.895 6.413,-0.000 7.500,-0.000 C8.587,-0.000 9.469,0.895 9.469,2.000 C9.469,3.104 8.587,4.000 7.500,4.000 ZM1.969,4.000 C0.881,4.000 -0.000,3.104 -0.000,2.000 C-0.000,0.895 0.881,-0.000 1.969,-0.000 C3.056,-0.000 3.937,0.895 3.937,2.000 C3.937,3.104 3.056,4.000 1.969,4.000 Z"></path>
                     				</svg>
                     				<ul class="tbl_action_ul">
+                                    <!--
                     				    <li>
                     				        <a data-toggle="tooltip" data-placement="top" title="Attendance" href="'.base_url('teacher/student-attendance/').$student['s_id'].'">
                     				            <span class="action_drop_icon">
@@ -1909,6 +1912,7 @@ class Ajaxcall extends CI_Controller{
                     				            '.$this->lang->line('ltr_notice').'
                     				        </a>
                     				    </li>
+                                        -->
     									<li>
                     				        <a href="'.base_url().$profile.'/doubts-ask/'.$student['s_id'].'">
                     				            <span class="action_drop_icon">
@@ -1925,6 +1929,7 @@ class Ajaxcall extends CI_Controller{
                     				            '.$this->lang->line('ltr_change_password').'
                     				        </a>
                     				    </li>
+                                        <!--
     									<li>
                     				        <a href="javascript:void(0);" class="paymentStatus" data-id="'.$student['s_id'].'">
                     				            <span class="action_drop_icon">
@@ -1933,6 +1938,7 @@ class Ajaxcall extends CI_Controller{
                     				            '.$payment_status.'
                     				        </a>
                     				    </li>
+                                        -->
                     				</ul>
                                 </span>
                              </div>';
@@ -3014,7 +3020,7 @@ function subcategory_table(){
                                 $subject,
                                 $chapter,
                                 $statusDrop,
-                                $catDrop,
+                                // $catDrop,
                                 $added_by,
                                 date('d-m-Y h:i A',strtotime($question['added_on'])),
                                 $actions
@@ -3030,7 +3036,7 @@ function subcategory_table(){
                                 $subject,
                                 $chapter,
                                 $statusDrop,
-                                $catDrop,
+                                // $catDrop,
                                 date('d-m-Y h:i A',strtotime($question['added_on'])),
                                 $actions 
                             ); 
@@ -3814,7 +3820,7 @@ function subcategory_table(){
                             '<p class="descParaCls">'.$descriptionWord.'</p>',
                             date('d-m-Y',strtotime($vac['start_date'])),
                             date('d-m-Y',strtotime($vac['last_date'])),
-                            $vac['mode'],
+                            // $vac['mode'],
                             $statusDrop,
                             $action,
                             $added_by
@@ -4731,7 +4737,7 @@ function subcategory_table(){
         				<path fill-rule="evenodd" fill="rgb(77 74 129)" d="M13.031,4.000 C11.944,4.000 11.062,3.104 11.062,2.000 C11.062,0.895 11.944,-0.000 13.031,-0.000 C14.119,-0.000 15.000,0.895 15.000,2.000 C15.000,3.104 14.119,4.000 13.031,4.000 ZM7.500,4.000 C6.413,4.000 5.531,3.104 5.531,2.000 C5.531,0.895 6.413,-0.000 7.500,-0.000 C8.587,-0.000 9.469,0.895 9.469,2.000 C9.469,3.104 8.587,4.000 7.500,4.000 ZM1.969,4.000 C0.881,4.000 -0.000,3.104 -0.000,2.000 C-0.000,0.895 0.881,-0.000 1.969,-0.000 C3.056,-0.000 3.937,0.895 3.937,2.000 C3.937,3.104 3.056,4.000 1.969,4.000 Z"></path>
         				</svg>
         				<ul class="tbl_action_ul">
-        				    
+        				    <!--
         				    <li>
         				        <a href="'.base_url('admin/teacher-progress/').$teach['id'].'">
         				            <span class="action_drop_icon">
@@ -4755,6 +4761,7 @@ function subcategory_table(){
         				            '.$this->lang->line('ltr_notice').'
         				        </a>
         				    </li>
+                            -->
 							<li>
         				        <a href="'.base_url().'admin/doubts-class/'.$teach['id'].'">
         				            <span class="action_drop_icon">

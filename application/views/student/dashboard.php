@@ -182,8 +182,8 @@
                         </div>
                         <div class="edu_dash_info">
 					        <ul>
-					            <li><p><?php echo html_escape($this->common->languageTranslator('ltr_online'));?> <span><?php echo html_escape($online_vacancy);?></span></p></li>
-					            <li><p><?php echo html_escape($this->common->languageTranslator('ltr_offline'));?> <span><?php echo html_escape($offline_vacancy);?></span></p></li>
+					            <li><p><?php echo html_escape($this->common->languageTranslator('ltr_online'));?> <span><?php /*echo html_escape($online_vacancy);*/?></span></p></li>
+					            <li><p><?php echo html_escape($this->common->languageTranslator('ltr_offline'));?> <span><?php /*echo html_escape($offline_vacancy);*/?></span></p></li>
 					        <ul>
 					    </div>
                     </div>
@@ -373,7 +373,7 @@ if(!empty($mock_result)){
 			legend: { display: false },
 			title: {
 				display: true,
-				text: 'Mock Test Paper Progress Report'
+				text: 'Quiz Paper Progress Report'
 			}
 		}
     };

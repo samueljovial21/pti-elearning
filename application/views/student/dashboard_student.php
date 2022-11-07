@@ -352,7 +352,7 @@ if(!empty($mock_result)){
 			legend: { display: false },
 			title: {
 				display: true,
-				text: 'Mock Test Paper Progress Report'
+				text: 'Quiz Paper Progress Report'
 			}
 		}
     };

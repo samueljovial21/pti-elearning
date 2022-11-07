@@ -115,11 +115,11 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12" >
-                        <div class="edu_title_wrapper">
-                            <h4 class="edu_sub_title"><?php echo html_escape($this->common->languageTranslator('ltr_BATCH_INFORMATION'));?></h4>
+                        <!-- <div class="edu_title_wrapper">
+                            <h4 class="edu_sub_title"><?php /* echo html_escape($this->common->languageTranslator('ltr_BATCH_INFORMATION'));*/?></h4>
                             <input type="radio" name="payMode"value="offline" class="payMode">Offline
                             <input type="radio" name="payMode"value="Online" class="payMode" checked>Online
-                        </div>
+                        </div> -->
                     </div>                              
                          <div class="col-lg-6 col-md-6 col-sm-12 col-12 multibatchAdd">
                         <div class="form-group"> 

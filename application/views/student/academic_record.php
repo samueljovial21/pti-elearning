@@ -133,7 +133,7 @@
     var config = {
         type: 'bar',
         data: {
-			labels: ["Extra Class (<?php echo $total_extra_class;?>)","Practice Paper (<?php echo $total_practice_test;?>)","Mock Test Paper (<?php echo $total_mock_test;?>)"],
+			labels: ["Extra Class (<?php echo $total_extra_class;?>)","Practice Paper (<?php echo $total_practice_test;?>)","Quiz Paper (<?php echo $total_mock_test;?>)"],
 			datasets: [{ 
 				data: [<?php echo $extra_class.','.$practice_result.','.$mock_result;?>],
 				label: "",

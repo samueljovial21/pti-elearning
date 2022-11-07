@@ -13,7 +13,7 @@
                         <div class="col-xl-5 col-lg-7 col-md-12 col-sm-12 col-12 align-self-center">
                             <div class="edu_courses_box">
                                 <div class="edu_courses_cntnbox">
-                                <h2 class="edu_courses_sprice"><?php if($singel_batches[0]['batch_type']==2){ if(!empty($singel_batches[0]['batch_offer_price'])){ echo '<s>'.$currency_decimal.' '.$singel_batches[0]['batch_price'].'</s> / '.$currency_decimal.' '.$singel_batches[0]['batch_offer_price']; }else{ echo $currency_decimal.' '.$singel_batches[0]['batch_price'];} }else{ echo "Free";} ?></h2>
+                                <!-- <h2 class="edu_courses_sprice"><?php /*if($singel_batches[0]['batch_type']==2){ if(!empty($singel_batches[0]['batch_offer_price'])){ echo '<s>'.$currency_decimal.' '.$singel_batches[0]['batch_price'].'</s> / '.$currency_decimal.' '.$singel_batches[0]['batch_offer_price']; }else{ echo $currency_decimal.' '.$singel_batches[0]['batch_price'];} }else{ echo "Free";} */?></h2> -->
                                 
                                 <h2 class="edu_courses_title"><?php echo $singel_batches[0]['batch_name']; ?></h2>
                                 <p class="edu_courses_des mb_30"><?php echo $singel_batches[0]['description']; ?></p>
@@ -288,7 +288,7 @@
                                     <!--    <li><i class="fas fa-star"></i></li>-->
                                     <!--    <li><i class="fas fa-star"></i></li>-->
                                     <!--</ul>-->
-                                    <h3 class="edu-course-price"><?php if($value['batch_type']==2){ if(!empty($value['batch_offer_price'])){ echo '<s>'.$currency_decimal.' '.$value['batch_price'].'</s> / '.$currency_decimal.' '.$value['batch_offer_price']; }else{ echo $currency_decimal.' '.$value['batch_price'];} }else{ echo "Free";} ?></h3>
+                                    <!-- <h3 class="edu-course-price"><?php /*if($value['batch_type']==2){ if(!empty($value['batch_offer_price'])){ echo '<s>'.$currency_decimal.' '.$value['batch_price'].'</s> / '.$currency_decimal.' '.$value['batch_offer_price']; }else{ echo $currency_decimal.' '.$value['batch_price'];} }else{ echo "Free";} */?></h3> -->
                                     <a href="<?php echo base_url('courses-details/'.$value['id']); ?>" class="edu_courses_view"><?php echo html_escape($this->common->languageTranslator('ltr_course_view'));?><i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>

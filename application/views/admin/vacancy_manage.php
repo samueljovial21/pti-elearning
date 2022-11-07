@@ -47,7 +47,7 @@
                                 <th><?php echo html_escape($this->common->languageTranslator('ltr_description'));?></th>
                                 <th><?php echo html_escape($this->common->languageTranslator('ltr_start_date'));?></th>
                                 <th><?php echo html_escape($this->common->languageTranslator('ltr_last_date'));?></th>
-                                <th class="no-sort"><?php echo html_escape($this->common->languageTranslator('ltr_mode'));?></th>
+                                <!-- <th class="no-sort"><?php echo html_escape($this->common->languageTranslator('ltr_mode'));?></th> -->
                                 <?php echo ($this->session->userdata('role')==1)?'<th class="no-sort">'.html_escape($this->common->languageTranslator('ltr_status')).'</th>':''; ?>
                                 <th class="no-sort"><?php echo html_escape($this->common->languageTranslator('ltr_actions'));?></th>
                                 <th class="no-sort"><?php echo html_escape($this->common->languageTranslator('ltr_added_by'));?></th>
@@ -105,7 +105,7 @@
     						<input type="text" class="form-control require chooseDate" id="last_date" name="last_date" placeholder="<?php echo html_escape($this->common->languageTranslator('ltr_last_date'));?>">
     					</div>
     				</div>
-    				<div class="col-lg-6 col-md-12 col-sm-12 col-12">
+    				<!-- <div class="col-lg-6 col-md-12 col-sm-12 col-12">
     					<div class="form-group">
     						<label><?php echo html_escape($this->common->languageTranslator('ltr_application_mode'));?><sup>*</sup></label>
     						<select class="form-control require edu_selectbox_without_search" id="mode" name="mode" data-placeholder="<?php echo html_escape($this->common->languageTranslator('ltr_select_mode'));?>">
@@ -114,7 +114,7 @@
     							<option value="Offline"><?php echo html_escape($this->common->languageTranslator('ltr_offline_mode'));?></option>
     						</select>
     					</div>
-    				</div>
+    				</div> -->
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
     					<div class="form-group">
     					    <label><?php echo html_escape($this->common->languageTranslator('ltr_upload_files'));?></label>

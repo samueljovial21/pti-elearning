@@ -10,8 +10,6 @@
                         <div class="form-group">
                             <select name="language_type" class="form-control require edu_selectbox_with_search" data-symb="no" data-placeholder="Select Language"> 
                                 <option <?php if($language_name=="english"){ echo 'selected';} ?> value="english">English</option>
-								<option <?php if($language_name=="french"){ echo 'selected';} ?> value="french">French</option>
-								<option <?php if($language_name=="arabic"){ echo 'selected';} ?> value="arabic">Arabic</option>
 								</select>
                             
                         </div>
