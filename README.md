@@ -7,3 +7,8 @@ V1.0 :
 
 V1.1 :
 - Added Admin Features
+
+V1.2 :
+- Added New Admin Features
+- Added Teacher Features
+- Added Student Features
