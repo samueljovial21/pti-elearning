@@ -1,0 +1,16 @@
+<svg id="Right" xmlns="http://www.w3.org/2000/svg" width="111" height="75" viewBox="0 0 111 75">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff6f67;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1134,805s57.67-19.95,111-75v57s1.12,18-17,18h-94Z" transform="translate(-1134 -730)"/>
+  <path class="cls-2" d="M1134,805s54.8-6.2,111-55v37s0,18-17,18h-94Z" transform="translate(-1134 -730)"/>
+</svg>

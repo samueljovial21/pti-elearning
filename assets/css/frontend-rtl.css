@@ -1,0 +1,141 @@
+body.rtl {
+    text-align: right;
+}
+.rtl .toast-top-right {
+    left: 12px;
+    right: auto;
+}
+/********************************************************
+    Login CSS
+*******************************************************/
+.rtl .checkbox_holder label:before {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.rtl .checkbox_holder input:checked + label:after {
+    left: auto;
+    right: 7px;
+}
+.rtl .pxn_login_data form .text-md-right {
+    /*text-align: left!important;*/
+}
+/********************************************************
+    Header section CSS
+*******************************************************/
+.rtl .edu_social_wrapper ul li {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.rtl .edu_header_info i {
+    margin-right: 0px;
+    margin-left: 8px;
+}
+.rtl .edu_header_info ul li {
+    margin-left: 0px;
+    margin-right: 20px;
+}
+.rtl .edu_header_info ul li:first-child {
+    margin-right: 0;
+    padding: 6px 0 6px 20px;
+}
+.rtl .edu_header_info ul li:last-child:before {
+    content: inherit;
+}
+.rtl .edu_header_info ul li:first-child:before {
+    display:block;
+} 
+/********************************************************
+    About section CSS
+*******************************************************/
+.rtl .edu_about_time {
+    left: 15px;
+    right: auto;
+}
+.rtl .edu_about_small_img {
+    float: left;
+}
+.rtl .edu_selection_info {
+    padding: 0 20px 0 15px;
+}
+.rtl .edu_courses_detail ul li .edu_course_info_icon {
+    text-align: right;
+}
+.rtl .edu_courses_detail h4:before, .rtl .edu_courses_detail h4:after{
+    left:auto;
+    right:0;
+}
+.rtl .edu_widgets ul li {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.rtl .edu_widgets ul li:before {
+    left: auto;
+    right: 0;
+}
+.rtl .edu_footer_address ul li span {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.rtl .edu_footer_address ul li {
+    padding: 0;
+}
+.rtl #scroll {
+    right:auto;
+    left: 15px;
+}
+.rtl .edu_page_title_text ul > li {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.rtl .edu_page_title_text ul > li:before {
+    left:auto;
+    right: 0;
+    content: "\ea9d";
+}
+.rtl .edu_page_title_text ul > li:first-child {
+    padding-right: 0;
+}
+/********************************************************
+    Courses Offered page CSS
+*******************************************************/
+.rtl .edu_courseInfo_box img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+/********************************************************
+    Meadia  CSS
+*******************************************************/
+@media (max-width: 991.98px){
+.rtl .main_menu_wrapper {
+    right: -300px;
+}
+.rtl .main_menu_wrapper.open {
+    right: 0;
+}
+.rtl .main_menu_wrapper li.has_submenu:before {
+    left: 26px;
+    right: auto;
+}
+.rtl .main_menu_wrapper li.has_submenu:after{
+   left: 21px;
+    right: auto; 
+}
+.rtl .main_menu_wrapper li {
+    text-align: right;
+}
+.rtl .edu_social_wrapper ul li {
+    margin-left: 10px;
+}
+.rtl .edu_header_info ul li {
+    padding: 6px 0 6px 10px;
+    margin-right: 10px
+}
+.rtl .edu_header_info ul li:first-child {
+    padding: 6px 0 6px 10px;
+}
+}
+@media (max-width: 575.98px){
+.rtl .edu_about_small_img {
+    float: unset;
+}
+}

@@ -1,0 +1,16 @@
+<svg id="Left" xmlns="http://www.w3.org/2000/svg" width="111" height="75" viewBox="0 0 111 75">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff6f67;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M786,150s-57.669,19.95-111,75V168s-1.12-18,17-18h94Z" transform="translate(-675 -150)"/>
+  <path class="cls-2" d="M786,150s-54.8,6.2-111,55V168s0-18,17-18h94Z" transform="translate(-675 -150)"/>
+</svg>
