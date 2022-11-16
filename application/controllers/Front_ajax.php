@@ -2067,7 +2067,6 @@ function change_student_status(){
                         $instructions = '<li>'.$this->lang->line('ltr_all_questions_com').'</li>
                             <li>'.$this->lang->line('ltr_there_will_be').'</li>
                             <li>'.$this->lang->line('ltr_please_do_not').'</li>
-                            <li>'.$this->lang->line('ltr_on_time_completion').'</li>
                             <li>'.$this->lang->line('ltr_on_time_completion').'</li>';
                     }
                    

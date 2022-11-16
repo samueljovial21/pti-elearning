@@ -301,7 +301,7 @@
                                     </a></li>
                             <?php }
                         }
-                        /*if (isset($access->live_class)) {
+                        if (isset($access->live_class)) {
                             if ($access->live_class == '1') { ?>
                                 <li <?php echo in_array("live-class", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>teacher/live-class">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -319,7 +319,8 @@
                                         <span>Live class</span>
                                     </a></li>
                             <?php }
-                        }*/
+                        }
+
                         if (isset($access->extraclasses)) {
                             if ($access->extraclasses == '1') { ?>
                                 <li <?php echo in_array("extra-classes", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>teacher/extra-classes">
@@ -401,7 +402,8 @@
                                 </li>
                             <?php }
                         }
-                        /*if (isset($access->video_lecture)) {
+                        
+                        if (isset($access->video_lecture)) {
                             if ($access->video_lecture == '1') { ?>
 
                                 <li <?php echo in_array("video-manage", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>teacher/video-manage">
@@ -434,7 +436,7 @@
                                     </a></li>
                             <?php }
                         }
-                        */
+                        
                         if (isset($access->question_manager)) {
                             if ($access->question_manager == '1') { ?>
                                 <li <?php echo in_array("question-manage", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>teacher/question-manage">
@@ -565,7 +567,7 @@
                                 </li>
                             <?php }
                         }
-                        /*if (isset($access->notice)) {
+                        if (isset($access->notice)) {
                             if ($access->notice == '1') { ?>
                                 <li <?php echo in_array("notice", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>teacher/notice">
                                         <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -580,8 +582,9 @@
                                         <span><?php echo html_escape($this->common->languageTranslator('ltr_notice')); ?></span>
                                     </a></li>
                             <?php }
-                        }*/
-                        /*if (isset($access->student_leave)) {
+                        }
+                        
+                        if (isset($access->student_leave)) {
                             if ($access->student_leave == '1') { ?>
                                 <li class="<?php echo (in_array("manage-student-leave", $cur_arr)) ? 'active' : ''; ?>"><a href="<?php echo base_url(); ?>teacher/manage-student-leave">
                                         <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -751,7 +754,7 @@
                             </a></li>
                 <?php }
                 
-                            } */?>
+                            }?>
                             
                     </ul>
                 </div>

@@ -228,7 +228,7 @@
 							</a></li>
 
 
-						<!-- <li <?php /*echo in_array("syllabus", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/syllabus/') . $this->session->userdata('batch_id') : 'javascript:void(0)'; ?>">
+						<!-- <li <?php echo in_array("syllabus", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/syllabus/') . $this->session->userdata('batch_id') : 'javascript:void(0)'; ?>">
 								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.004 512.004" style="enable-background:new 0 0 512.004 512.004;" xml:space="preserve">
 									<g>
 										<g>
@@ -316,7 +316,7 @@
 								<span><?php echo html_escape($this->common->languageTranslator('ltr_syllabus')); ?></span>
 							</a></li> -->
 
-						<!-- <li <?php echo in_array("start-class", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/start-class/') . $this->session->userdata('batch_id') : 'javascript:void(0)'; ?>">
+						<li <?php echo in_array("start-class", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/start-class/') . $this->session->userdata('batch_id') : 'javascript:void(0)'; ?>">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 									<g>
 										<path d="M472,72H376V40a8,8,0,0,0-11.97-6.95L320,58.21V40a8,8,0,0,0-8-8H144a8,8,0,0,0-8,8V72H40A32.036,32.036,0,0,0,8,104V376a32.036,32.036,0,0,0,32,32H204.9l-10.67,32H168a8,8,0,0,0-8,8v24a8,8,0,0,0,8,8H344a8,8,0,0,0,8-8V448a8,8,0,0,0-8-8H317.77L307.1,408H472a32.042,32.042,0,0,0,32-32V104A32.042,32.042,0,0,0,472,72ZM320,76.64l40-22.85V154.21l-40-22.85ZM152,48H304V160H152ZM336,456v8H176v-8ZM211.1,440l10.67-32h68.46l10.67,32ZM488,376a16.021,16.021,0,0,1-16,16H40a16.021,16.021,0,0,1-16-16V360H488Zm0-32H24V104A16.021,16.021,0,0,1,40,88h96v80a8,8,0,0,0,8,8H312a8,8,0,0,0,8-8V149.79l44.03,25.16A8,8,0,0,0,376,168V88h96a16.021,16.021,0,0,1,16,16Z" />
@@ -329,8 +329,8 @@
 										<path d="M264.308,282.2a8,8,0,0,0,15.384,0l16-56a8,8,0,1,0-15.384-4.4L272,250.88,263.692,221.8a8,8,0,1,0-15.384,4.4Z" />
 									</g>
 								</svg>
-								<span><?php echo html_escape($this->common->languageTranslator('ltr_live_class')); */?></span>
-							</a></li> -->
+								<span><?php echo html_escape($this->common->languageTranslator('ltr_live_class')); ?></span>
+							</a></li>
 						<li <?php echo in_array("homework", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/homework') : 'javascript:void(0)'; ?>">
 								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
 									<g>
@@ -437,15 +437,15 @@
 						</li>
 
 
-						<!-- <li <?php echo in_array("extra-classes", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/extra-classes') : 'javascript:void(0)'; ?>">
+						<li <?php echo in_array("extra-classes", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/extra-classes') : 'javascript:void(0)'; ?>">
 								<svg enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
 									<g>
 										<path d="m459.943 100.795c9.954-10.714 16.057-25.052 16.057-40.795 0-33.084-26.916-60-60-60s-60 26.916-60 60c0 15.743 6.103 30.081 16.057 40.795-14.691 7.698-27.135 19.124-36.057 33.019-8.922-13.896-21.366-25.321-36.057-33.019 9.954-10.714 16.057-25.052 16.057-40.795 0-33.084-26.916-60-60-60s-60 26.916-60 60c0 15.743 6.103 30.081 16.057 40.795-14.691 7.698-27.135 19.123-36.057 33.019-8.922-13.896-21.366-25.321-36.057-33.019 9.954-10.714 16.057-25.052 16.057-40.795 0-33.084-26.916-60-60-60s-60 26.916-60 60c0 15.743 6.103 30.081 16.057 40.795-30.32 15.887-51.057 47.668-51.057 84.205v100c0 8.284 6.716 15 15 15h20c0 15.743 6.103 30.081 16.057 40.795-30.32 15.887-51.057 47.668-51.057 84.205v72c0 8.284 6.716 15 15 15h480c8.284 0 15-6.716 15-15v-72c0-36.537-20.737-68.318-51.057-84.205 9.954-10.714 16.057-25.052 16.057-40.795h20c8.284 0 15-6.716 15-15v-100c0-36.537-20.737-68.318-51.057-84.205zm-73.943-40.795c0-16.542 13.458-30 30-30s30 13.458 30 30-13.458 30-30 30-30-13.458-30-30zm30 60c34.159 0 62.248 26.486 64.81 60h-129.62c2.562-33.514 30.651-60 64.81-60zm-190-60c0-16.542 13.458-30 30-30s30 13.458 30 30-13.458 30-30 30-30-13.458-30-30zm30 60c34.159 0 62.248 26.486 64.81 60h-129.62c2.562-33.514 30.651-60 64.81-60zm-190-60c0-16.542 13.458-30 30-30s30 13.458 30 30-13.458 30-30 30-30-13.458-30-30zm30 60c34.159 0 62.248 26.486 64.81 60h-129.62c2.562-33.514 30.651-60 64.81-60zm-30 180c0-16.542 13.458-30 30-30s30 13.458 30 30-13.458 30-30 30-30-13.458-30-30zm90 0h40c0 15.743 6.103 30.081 16.057 40.795-14.691 7.698-27.135 19.123-36.057 33.019-8.922-13.896-21.366-25.321-36.057-33.019 9.954-10.714 16.057-25.052 16.057-40.795zm70 0c0-16.542 13.458-30 30-30s30 13.458 30 30-13.458 30-30 30-30-13.458-30-30zm90 0h40c0 15.743 6.103 30.081 16.057 40.795-14.691 7.698-27.135 19.124-36.057 33.019-8.922-13.896-21.366-25.321-36.057-33.019 9.954-10.714 16.057-25.052 16.057-40.795zm-60 60c34.159 0 62.248 26.486 64.81 60h-129.62c2.562-33.514 30.651-60 64.81-60zm-160 0c34.159 0 62.248 26.486 64.81 60h-129.62c2.562-33.514 30.651-60 64.81-60zm385 122h-450v-32h450zm-.19-62h-129.62c2.562-33.514 30.65-60 64.81-60s62.248 26.486 64.81 60zm-94.81-120c0-16.542 13.458-30 30-30s30 13.458 30 30-13.458 30-30 30-30-13.458-30-30zm95-30h-13.072c-10.391-17.916-29.769-30-51.928-30s-41.537 12.084-51.928 30h-56.144c-10.391-17.916-29.769-30-51.928-30s-41.537 12.084-51.928 30h-56.144c-10.391-17.916-29.769-30-51.928-30s-41.537 12.084-51.928 30h-13.072v-60h450z" />
 									</g>
 								</svg>
 								<span><?php echo html_escape($this->common->languageTranslator('ltr_extra_classes')); ?></span>
-							</a></li> -->
-						<!-- <li <?php echo in_array("video-lecture", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/video-lecture') : 'javascript:void(0)'; ?>">
+							</a></li>
+						<li <?php echo in_array("video-lecture", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/video-lecture') : 'javascript:void(0)'; ?>">
 								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
 									<g>
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M25.753,23.958c-7.167,0-14.334,0-21.506,0
@@ -473,10 +473,10 @@
 								</svg>
 								<span><?php echo html_escape($this->common->languageTranslator('ltr_video_lecture')); ?></span>
 							</a>
-						</li> -->
+						</li>
 
 
-						<!-- <li <?php echo in_array("vacancy", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/vacancy') : 'javascript:void(0)'; ?>">
+						<li <?php echo in_array("vacancy", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/vacancy') : 'javascript:void(0)'; ?>">
 								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
 									<g>
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M18.207,4.605c0.082,0.068,0.172,0.131,0.248,0.206
@@ -567,7 +567,7 @@
 									</g>
 								</svg>
 								<span><?php echo html_escape($this->common->languageTranslator('ltr_notice')); ?></span>
-							</a></li> -->
+							</a></li>
 
 						<li <?php echo in_array("doubts-ask", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/doubts-ask') : 'javascript:void(0)'; ?>">
 								<svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
@@ -582,7 +582,7 @@
 								</svg>
 								<span><?php echo html_escape($this->common->languageTranslator('ltr_doubts_ask')); ?></span>
 							</a></li>
-						<!-- <li class="has_sub_menu <?php echo (in_array("practice-paper", $cur_arr) || in_array("mock-paper", $cur_arr) || in_array("practice-result", $cur_arr) || in_array("mock-result", $cur_arr) || in_array("view-progress", $cur_arr)) ? 'active' : ''; ?>"><a href="javascript:void(0);" class="">
+						<li class="has_sub_menu <?php echo (in_array("practice-paper", $cur_arr) || in_array("mock-paper", $cur_arr) || in_array("practice-result", $cur_arr) || in_array("mock-result", $cur_arr) || in_array("view-progress", $cur_arr)) ? 'active' : ''; ?>"><a href="javascript:void(0);" class="">
 								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
 									<g>
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M18.207,4.605c0.082,0.068,0.172,0.131,0.248,0.206
@@ -797,9 +797,9 @@
 									</g>
 								</svg>
 								<span><?php echo html_escape($this->common->languageTranslator('ltr_attendance')); ?></span>
-							</a></li> -->
+							</a></li>
 
-						<!-- <li <?php /*echo in_array("certificate", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/certificate') : 'javascript:void(0)'; ?>">
+						<li <?php echo in_array("certificate", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/certificate') : 'javascript:void(0)'; ?>">
 								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
 									<g>
 										<g>
@@ -840,8 +840,8 @@
 										</g>
 									</g>
 								</svg>
-								<span><?php echo html_escape($this->common->languageTranslator('ltr_certificate')); */?></span>
-							</a></li> -->
+								<span><?php echo html_escape($this->common->languageTranslator('ltr_certificate')); ?></span>
+							</a></li>
 					</ul>
 				</div>
 			</div>
@@ -882,7 +882,7 @@
 				</a>
 			</div>
 			<input type="hidden" id="student_id" value="<?php echo $this->session->userdata('uid'); ?>">
-			<!-- <div class="notification-wrapper">
+			<div class="notification-wrapper">
 				<a href="javascript:void(0);" class="notification-info">
 					<?php
 					$total_not = $this->db_model->countAll('notifications', array('status' => '0', 'student_id' => $this->session->userdata('uid')));
@@ -921,7 +921,7 @@
 						</a>
 					</div>
 				</div>
-			</div> -->
+			</div>
 
 			<div class="edu_admin">
 				<div class="edu_admin_inner">
