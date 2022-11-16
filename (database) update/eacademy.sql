@@ -776,7 +776,7 @@ CREATE TABLE `notifications` (
 INSERT INTO `notifications` (`id`, `student_id`, `batch_id`, `notification_type`, `msg`, `url`, `status`, `time`, `seen_by`) VALUES
 (1, 0, 0, 'Vacancy', 'New Upcoming Exam Added', 'student/vacancy', 0, '2022-10-28 12:48:08', '0000-00-00 00:00:00'),
 (2, 2, 5, 'Extra-class', 'New ExtraClass Added', 'student/extra-classes', 1, '2022-11-07 19:46:02', '2022-11-07 19:46:16'),
-(3, 2, 5, 'Exam', 'New Mock Paper Added', 'student/mock-paper', 1, '2022-11-07 20:01:19', '2022-11-07 20:01:48'),
+(3, 2, 5, 'Exam', 'New Quiz Paper Added', 'student/mock-paper', 1, '2022-11-07 20:01:19', '2022-11-07 20:01:48'),
 (4, 2, 5, 'Library', 'New Book Added', 'student/book', 0, '2022-11-07 21:34:10', '0000-00-00 00:00:00'),
 (5, 2, 5, 'Notes', 'New Notes Added', 'student/notes', 0, '2022-11-07 21:34:46', '0000-00-00 00:00:00'),
 (6, 0, 0, 'Vacancy', 'New Upcoming Exam Added', 'student/vacancy', 0, '2022-11-07 22:19:53', '0000-00-00 00:00:00');

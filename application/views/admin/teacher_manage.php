@@ -79,7 +79,6 @@
                                 <option value=""><?php echo html_escape($this->common->languageTranslator('ltr_select_gender'));?></option>
                                 <option value="male"><?php echo html_escape($this->common->languageTranslator('ltr_male'));?></option>
                                 <option value="female"><?php echo html_escape($this->common->languageTranslator('ltr_female'));?></option>
-                                <option value="other"><?php echo html_escape($this->common->languageTranslator('ltr_other'));?></option>
                             </select>
                         </div>
                     </div>
