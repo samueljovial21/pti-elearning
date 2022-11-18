@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 22, 2022 at 06:25 PM
+-- Generation Time: Nov 18, 2022 at 10:14 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -71,7 +71,7 @@ CREATE TABLE `batches` (
   `end_date` date NOT NULL,
   `start_time` time NOT NULL,
   `end_time` time NOT NULL,
-  `batch_type` int(11) NOT NULL COMMENT '1= batch free , 2=batch paid',
+  `batch_type` int(11) NOT NULL COMMENT '1=batch free , 2=batch paid',
   `batch_price` varchar(100) NOT NULL,
   `batch_offer_price` varchar(50) NOT NULL,
   `description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -86,7 +86,12 @@ CREATE TABLE `batches` (
 --
 
 INSERT INTO `batches` (`id`, `admin_id`, `cat_id`, `sub_cat_id`, `batch_name`, `start_date`, `end_date`, `start_time`, `end_time`, `batch_type`, `batch_price`, `batch_offer_price`, `description`, `batch_image`, `no_of_student`, `status`, `pay_mode`) VALUES
-(1, 1, 123, 123456, 'Hehe_Batch', '2022-10-18', '2024-10-18', '00:00:00', '06:00:00', 1, '', '', '', '', 0, 1, 'Online');
+(1, 1, 123, 123456, 'Hehe_Batch', '2022-10-18', '2024-10-18', '00:00:00', '06:00:00', 1, '', '', '', '', 0, 1, 'Online'),
+(2, 1, 123, 123456, 'Ini_Testing_Batch_2', '2022-10-29', '2023-10-29', '07:00:00', '10:00:00', 1, '', '', 'Ini testing deskripsi', 'putih_github_221029175754.png', 1, 1, 'Online'),
+(3, 1, 127, 123460, 'Kelas A', '2022-10-29', '2022-10-30', '00:00:00', '00:00:00', 1, '', '', 'Gambar Test', '20201001_170421_221029200246.jpg', 0, 0, 'Online'),
+(4, 1, 127, 123461, 'English_UTBK', '2022-11-07', '2023-11-07', '00:00:00', '12:00:00', 1, '', '', 'This is a preparation of UTBK Course', 'Hehe_221107140212.jpg', 1, 1, 'Online'),
+(5, 1, 128, 123458, 'Belajar_Dasar_English', '2022-11-07', '2023-11-07', '00:00:00', '12:00:00', 1, '', '', 'Ayam', 'DSCF9871_221107141309.JPG', 1, 1, 'Online'),
+(6, 1, 128, 123458, 'Programming_English', '2022-11-07', '2023-11-07', '00:00:00', '12:00:00', 1, '', '', 'One Ok Rock', '_21_one-ok-rock-wallpaper_One-Ok-Rock-Taking-Off-official-Video-From-Nagisaen-_logo_added_221107141604.jpg', 1, 1, 'Online');
 
 -- --------------------------------------------------------
 
@@ -108,7 +113,10 @@ CREATE TABLE `batch_category` (
 --
 
 INSERT INTO `batch_category` (`id`, `name`, `slug`, `status`, `time`, `admin_id`) VALUES
-(123, 'Batch_Testing', 'Just a testing bacth', 1, '2022-10-18 02:57:51', 1);
+(123, 'Batch_Testing', 'Just a testing bacth', 1, '2022-10-18 02:57:51', 1),
+(126, 'SMP', 'smp', 1, '2022-10-29 09:42:47', 1),
+(127, 'SMA', 'sma', 1, '2022-10-29 09:42:53', 1),
+(128, 'Perguruan Tinggi', 'perguruan_tinggi', 1, '2022-10-29 09:43:10', 1);
 
 -- --------------------------------------------------------
 
@@ -128,7 +136,13 @@ CREATE TABLE `batch_fecherd` (
 --
 
 INSERT INTO `batch_fecherd` (`id`, `batch_id`, `batch_specification_heading`, `batch_fecherd`) VALUES
-(1, 1, '', '[\"\"]');
+(1, 1, '', '[\"\"]'),
+(2, 2, '', '[\"\"]'),
+(3, 3, 'Pintar Grammar', '[\"Layanan full service grammar\"]'),
+(4, 2, 'Bebas belajar', '[\"Banyak fitur\"]'),
+(5, 4, 'U will learn UTBK Simulation', '[\"Bonus TOEFL test\"]'),
+(6, 5, 'U will learn anything here', '[\"Family\"]'),
+(7, 6, 'No Benefit', '[\"No Fitures\"]');
 
 -- --------------------------------------------------------
 
@@ -151,7 +165,11 @@ CREATE TABLE `batch_subcategory` (
 --
 
 INSERT INTO `batch_subcategory` (`id`, `cat_id`, `name`, `slug`, `status`, `time`, `admin_id`) VALUES
-(123456, 123, 'Test_Subcategory', 'test', 1, '2022-10-18 03:03:51', 1);
+(123456, 123, 'Test_Subcategory', 'test', 1, '2022-10-18 03:03:51', 1),
+(123457, 128, 'Bimbingan TOEFL', 'bimbingan_toefl', 1, '2022-10-29 09:45:43', 1),
+(123458, 128, 'Umum', 'umum', 1, '2022-10-29 09:45:59', 1),
+(123460, 127, 'XI', 'xi', 1, '2022-10-29 13:00:10', 1),
+(123461, 127, 'XII', 'xii', 1, '2022-10-29 13:00:16', 1);
 
 -- --------------------------------------------------------
 
@@ -180,7 +198,12 @@ CREATE TABLE `batch_subjects` (
 --
 
 INSERT INTO `batch_subjects` (`id`, `batch_id`, `teacher_id`, `subject_id`, `chapter`, `sub_start_date`, `sub_end_date`, `sub_start_time`, `sub_end_time`, `chapter_status`, `chapter_complt_date`, `total_chapter_complt_date`, `added_on`) VALUES
-(1, 1, 15, 1234, '[\"12345\"]', '2022-10-18', '2023-10-18', '00:00:00', '06:00:00', '', '', '0000-00-00 00:00:00', '2022-10-18 10:07:34');
+(1, 1, 15, 1234, '[\"12345\"]', '2022-10-18', '2023-10-18', '00:00:00', '06:00:00', '', '', '0000-00-00 00:00:00', '2022-10-18 10:07:34'),
+(4, 2, 17, 1234, '[\"12345\"]', '2022-10-29', '2023-10-28', '07:00:00', '10:00:00', '', '', '0000-00-00 00:00:00', '2022-11-07 13:38:19'),
+(3, 3, 18, 1234, '[\"12345\"]', '2022-10-29', '2022-10-30', '00:00:00', '00:00:00', '', '', '0000-00-00 00:00:00', '2022-10-29 20:02:46'),
+(5, 4, 18, 1234, '[\"12345\"]', '2022-11-07', '2023-11-07', '00:00:00', '12:00:00', '', '', '0000-00-00 00:00:00', '2022-11-07 14:02:12'),
+(6, 5, 18, 1234, '[\"12345\"]', '2022-11-07', '2023-11-07', '00:00:00', '12:00:00', '', '', '0000-00-00 00:00:00', '2022-11-07 14:13:09'),
+(7, 6, 18, 1234, '[\"12345\"]', '2022-11-07', '2023-11-07', '00:00:00', '12:00:00', '', '', '0000-00-00 00:00:00', '2022-11-07 14:16:04');
 
 -- --------------------------------------------------------
 
@@ -258,6 +281,13 @@ CREATE TABLE `book_pdf` (
   `added_at` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `book_pdf`
+--
+
+INSERT INTO `book_pdf` (`id`, `admin_id`, `title`, `batch`, `topic`, `subject`, `file_name`, `status`, `added_by`, `added_at`) VALUES
+(1, 1, 'Ini_Buku', '[\"5\"]', '', '1234', 'Kelas-RB-Kelompok-04221107213410.pdf', 1, 18, '2022-11-07 21:34:10');
+
 -- --------------------------------------------------------
 
 --
@@ -271,6 +301,13 @@ CREATE TABLE `certificate` (
   `added_id` int(11) NOT NULL,
   `date` date NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `certificate`
+--
+
+INSERT INTO `certificate` (`id`, `student_id`, `batch_id`, `added_id`, `date`) VALUES
+(1, 2, 5, 1, '2022-11-16');
 
 -- --------------------------------------------------------
 
@@ -314,7 +351,7 @@ CREATE TABLE `chapters` (
 --
 
 INSERT INTO `chapters` (`id`, `subject_id`, `chapter_name`, `status`, `no_of_questions`) VALUES
-(12345, 1234, 'Testing_Chapter', 1, 1);
+(12345, 1234, 'Testing_Chapter', 1, 26);
 
 -- --------------------------------------------------------
 
@@ -375,6 +412,17 @@ CREATE TABLE `exams` (
   `added_at` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `exams`
+--
+
+INSERT INTO `exams` (`id`, `admin_id`, `name`, `type`, `format`, `batch_id`, `total_question`, `time_duration`, `question_ids`, `mock_sheduled_date`, `mock_sheduled_time`, `status`, `added_by`, `added_at`) VALUES
+(1, 1, 'Developing_Test_Paper', 1, 1, 1, '1', '10', '[\"1\"]', '2022-10-29', '06:40:00', 1, 1, '2022-10-29 15:52:03'),
+(2, 1, 'Test_Quiz', 1, 1, 5, '4', '60', '[\"12\",\"8\",\"7\",\"6\"]', '2022-11-07', '20:00:00', 1, 1, '2022-11-07 20:01:19'),
+(3, 1, 'Paper_NoName', 1, 1, 5, '4', '90', '[\"13\",\"12\",\"10\",\"9\"]', '2022-11-13', '20:00:00', 1, 1, '2022-11-13 20:32:38'),
+(4, 1, 'Basing', 1, 1, 5, '3', '900', '[\"22\",\"21\",\"20\"]', '2022-11-15', '09:35:00', 1, 1, '2022-11-15 09:38:43'),
+(5, 1, 'Ini_Paper_Test', 2, 1, 5, '4', '60', '[\"26\",\"25\",\"24\",\"23\"]', '0000-00-00', '00:00:00', 1, 1, '2022-11-16 15:41:33');
+
 -- --------------------------------------------------------
 
 --
@@ -394,6 +442,15 @@ CREATE TABLE `extra_classes` (
   `added_at` datetime NOT NULL,
   `completed_date_time` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `extra_classes`
+--
+
+INSERT INTO `extra_classes` (`id`, `admin_id`, `date`, `start_time`, `end_time`, `teacher_id`, `description`, `status`, `batch_id`, `added_at`, `completed_date_time`) VALUES
+(1, 1, '2022-11-08', '07:00:00', '09:00:00', 18, 'Desc', 'Incomplete', '[\"4\"]', '2022-11-07 19:39:52', '0000-00-00 00:00:00'),
+(2, 1, '2022-11-09', '06:00:00', '08:00:00', 18, 'Ok', 'Incomplete', '[\"5\"]', '2022-11-07 19:45:18', '0000-00-00 00:00:00'),
+(3, 1, '2022-11-10', '08:00:00', '09:00:00', 18, 'Okehhh', 'Incomplete', '[\"5\"]', '2022-11-07 19:46:02', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -507,6 +564,14 @@ CREATE TABLE `gallery` (
   `admin_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `gallery`
+--
+
+INSERT INTO `gallery` (`id`, `title`, `type`, `upload`, `image`, `video_url`, `video`, `status`, `admin_id`) VALUES
+(1, 'OneOkRock', 'Image', 'File', '_21_one-ok-rock-wallpaper_One-Ok-Rock-Taking-Off-official-Video-From-Nagisaen-_logo_added.jpg', '', '', 1, 1),
+(2, 'Queen_Meme', 'Video', 'File', '', '', '305800521_3280359682212129_1031705061698675248_n.mp4', 1, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -559,6 +624,13 @@ CREATE TABLE `homeworks` (
   `description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `added_at` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `homeworks`
+--
+
+INSERT INTO `homeworks` (`id`, `admin_id`, `teacher_id`, `date`, `subject_id`, `batch_id`, `description`, `added_at`) VALUES
+(1, 1, 18, '2022-11-07', 1234, '5', 'Ini Tugas', '2022-11-07 21:24:47');
 
 -- --------------------------------------------------------
 
@@ -641,6 +713,14 @@ CREATE TABLE `mock_result` (
   `added_on` datetime DEFAULT current_timestamp()
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `mock_result`
+--
+
+INSERT INTO `mock_result` (`id`, `admin_id`, `student_id`, `paper_id`, `paper_name`, `date`, `start_time`, `submit_time`, `total_question`, `time_duration`, `attempted_question`, `question_answer`, `percentage`, `added_on`) VALUES
+(2, 1, 2, 3, 'Paper_NoName', '2022-11-13', '20:33:00', '20:33:48', 4, '90', 4, '{\"9\":\"A\",\"10\":\"A\",\"12\":\"A\",\"13\":\"C\"}', 100, '2022-11-13 20:33:49'),
+(3, 1, 2, 4, 'Basing', '2022-11-15', '09:40:00', '09:41:39', 3, '900', 3, '{\"20\":\"D\",\"21\":\"C\",\"22\":\"D\"}', 58.33, '2022-11-15 09:41:41');
+
 -- --------------------------------------------------------
 
 --
@@ -659,6 +739,13 @@ CREATE TABLE `notes_pdf` (
   `added_by` int(11) NOT NULL,
   `added_at` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `notes_pdf`
+--
+
+INSERT INTO `notes_pdf` (`id`, `admin_id`, `title`, `batch`, `topic`, `subject`, `file_name`, `status`, `added_by`, `added_at`) VALUES
+(1, 1, 'Ini_Notes', '[\"5\"]', '12345', '1234', '6._Manejemen_Waktu_dalam_Proyek_221107213446.pdf', 1, 18, '2022-11-07 21:34:45');
 
 -- --------------------------------------------------------
 
@@ -699,6 +786,21 @@ CREATE TABLE `notifications` (
   `seen_by` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `notifications`
+--
+
+INSERT INTO `notifications` (`id`, `student_id`, `batch_id`, `notification_type`, `msg`, `url`, `status`, `time`, `seen_by`) VALUES
+(1, 0, 0, 'Vacancy', 'New Upcoming Exam Added', 'student/vacancy', 0, '2022-10-28 12:48:08', '0000-00-00 00:00:00'),
+(2, 2, 5, 'Extra-class', 'New ExtraClass Added', 'student/extra-classes', 1, '2022-11-07 19:46:02', '2022-11-07 19:46:16'),
+(3, 2, 5, 'Exam', 'New Mock Paper Added', 'student/mock-paper', 1, '2022-11-07 20:01:19', '2022-11-07 20:01:48'),
+(4, 2, 5, 'Library', 'New Book Added', 'student/book', 1, '2022-11-07 21:34:10', '2022-11-16 15:38:13'),
+(5, 2, 5, 'Notes', 'New Notes Added', 'student/notes', 1, '2022-11-07 21:34:46', '2022-11-16 15:38:13'),
+(6, 0, 0, 'Vacancy', 'New Upcoming Exam Added', 'student/vacancy', 0, '2022-11-07 22:19:53', '0000-00-00 00:00:00'),
+(7, 2, 5, 'Exam', 'New Mock Paper Added', 'student/mock-paper', 1, '2022-11-13 20:32:38', '2022-11-16 15:38:13'),
+(8, 2, 5, 'Exam', 'New Mock Paper Added', 'student/mock-paper', 1, '2022-11-15 09:38:43', '2022-11-16 15:38:13'),
+(9, 2, 5, 'Exam', 'New Practice Paper Added', 'student/practice-paper', 1, '2022-11-16 15:41:33', '2022-11-16 15:41:51');
+
 -- --------------------------------------------------------
 
 --
@@ -717,6 +819,13 @@ CREATE TABLE `old_paper_pdf` (
   `added_by` int(11) NOT NULL,
   `added_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `old_paper_pdf`
+--
+
+INSERT INTO `old_paper_pdf` (`id`, `admin_id`, `title`, `batch`, `topic`, `subject`, `file_name`, `status`, `added_by`, `added_at`) VALUES
+(1, 1, 'Ini_Old_Paper', '[\"5\"]', '', '1234', '7._Manajemen_Biaya_dalam_Proyek_221107213512.pdf', 1, 18, '2022-11-07 21:35:12');
 
 -- --------------------------------------------------------
 
@@ -771,6 +880,37 @@ CREATE TABLE `questions` (
   `category` int(11) NOT NULL,
   `added_on` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `questions`
+--
+
+INSERT INTO `questions` (`id`, `admin_id`, `subject_id`, `chapter_id`, `question`, `options`, `answer`, `added_by`, `status`, `category`, `added_on`) VALUES
+(1, 1, 1234, 12345, '<p>Who&#39;s this?<img alt=\"\" src=\"http://localhost:8080/pti-elearning/assets/images/25d691e14fa9_test.png\" style=\"height:605px; width:536px\" /></p>\r\n', '[\"\\u003Cp\\u003EKowalksky\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003ERico\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003EJokow....\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003EWho know\\u0026#39;s?\\u003C\\/p\\u003E\\r\\n\"]', 'A', 1, 1, 0, '2022-10-28 15:13:49'),
+(2, 1, 1234, 12345, 'Adaptive radiation in fishes started about number of million years ago1:', '[1200,500,1000,1500]', 'D', 1, 1, 0, '2022-11-01 08:02:47'),
+(3, 1, 1234, 12345, 'Adaptive radiation in fishes started about number of million years ago2:', '[1200,500,1000,1500]', 'B', 1, 1, 0, '2022-11-01 08:02:47'),
+(4, 1, 1234, 12345, 'Adaptive radiation in fishes started about number of million years ago3', '[1200,500,1000,1500]', 'A', 1, 1, 0, '2022-11-01 08:02:47'),
+(5, 1, 1234, 12345, 'Adaptive radiation in fishes started about number of million years ago4:', '[1200,500,1000,1500]', 'C', 1, 1, 0, '2022-11-01 08:02:47'),
+(6, 1, 1234, 12345, 'Adaptive radiation in fishes started about number of million years ago5:', '[1200,500,1000,1500]', 'D', 1, 1, 0, '2022-11-01 08:02:47'),
+(7, 1, 1234, 12345, 'Siapa Presiden Sekarang?', '[\"Jokowi\",\"Jakawi\",\"SBY\",\"Brock Lesnar\"]', '', 1, 1, 0, '2022-11-01 08:14:28'),
+(8, 1, 1234, 12345, 'Siapa Orang yang Terkenal dari PDIP?', '[\"Puan\",\"Megawati\",\"Optimum Pride\",\"Megatron\"]', '', 1, 1, 0, '2022-11-01 08:14:28'),
+(9, 1, 1234, 12345, '', '[null,null,null,null]', 'A', 1, 1, 0, '2022-11-01 08:14:28'),
+(10, 1, 1234, 12345, '', '[null,null,null,null]', 'A', 1, 1, 0, '2022-11-01 08:14:28'),
+(13, 1, 1234, 12345, '<p>Ini Soal</p>\r\n', '[\"\\u003Cp\\u003EIni Opsi A\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003EIni Opsi B\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003EIni Opsi C\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003EIni Opsi D\\u003C\\/p\\u003E\\r\\n\"]', 'C', 18, 1, 0, '2022-11-07 21:36:52'),
+(12, 1, 1234, 12345, '<p>Siapa Nama Dosen Terganteng ITERA???</p>\r\n', '[\"\\u003Cp\\u003EPak Andre\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003EPak Andre\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003EPak Andre\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003EPak Andre\\u003C\\/p\\u003E\\r\\n\"]', 'A', 1, 1, 0, '2022-11-01 09:42:43'),
+(14, 1, 1234, 12345, 'Huruf apa ini \"A\"', '[\"A\",\"B\",\"C\",\"D\"]', 'A', 1, 1, 0, '2022-11-13 20:54:47'),
+(15, 1, 1234, 12345, 'Huruf apa ini \"B\"', '[\"A\",\"B\",\"C\",\"D\"]', 'B', 1, 1, 0, '2022-11-13 20:54:47'),
+(16, 1, 1234, 12345, 'Huruf apa ini \"C\"', '[\"A\",\"B\",\"C\",\"D\"]', 'C', 1, 1, 0, '2022-11-13 20:54:47'),
+(17, 1, 1234, 12345, 'Huruf apa ini \"D\"', '[\"A\",\"B\",\"C\",\"D\"]', 'D', 1, 1, 0, '2022-11-13 20:54:47'),
+(18, 1, 1234, 12345, 'Huruf apa ini \"A\"', '[\"A\",\"B\",\"C\",\"D\"]', 'A', 1, 1, 0, '2022-11-13 20:54:47'),
+(19, 1, 1234, 12345, '<p><img alt=\"\" src=\"http://localhost:8080/pti-elearning/assets/images/0697ff9c3644_test.jpg\" style=\"height:3096px; width:4128px\" />Ini port SSD jenis aoa?</p>\r\n', '[\"\\u003Cp\\u003EM.2 SATA\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003ESATA\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003EM.2 NVME\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003EGk tau\\u003C\\/p\\u003E\\r\\n\"]', 'A', 1, 1, 0, '2022-11-15 08:04:17'),
+(20, 1, 1234, 12345, '<p>Hahahahaha?</p>\r\n', '[\"\\u003Cp\\u003E\\u003Cimg alt=\\u0022\\u0022 src=\\u0022http:\\/\\/localhost:8080\\/pti-elearning\\/assets\\/images\\/7736da156c3d_test.png\\u0022 style=\\u0022height:1080px; width:1920px\\u0022 \\/\\u003EHehe\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003E\\u003Cimg alt=\\u0022\\u0022 src=\\u0022http:\\/\\/localhost:8080\\/pti-elearning\\/assets\\/images\\/8f6ae14811e2_test.png\\u0022 style=\\u0022height:1080px; width:1920px\\u0022 \\/\\u003EHoho\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003E\\u003Cimg alt=\\u0022\\u0022 src=\\u0022http:\\/\\/localhost:8080\\/pti-elearning\\/assets\\/images\\/dcd25092e551_test.png\\u0022 style=\\u0022height:1080px; width:1920px\\u0022 \\/\\u003EKodok loncat\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003E\\u003Cimg alt=\\u0022\\u0022 src=\\u0022http:\\/\\/localhost:8080\\/pti-elearning\\/assets\\/images\\/1b16cb6e63a1_test.png\\u0022 style=\\u0022height:1080px; width:1920px\\u0022 \\/\\u003EPenari Tiang\\u003C\\/p\\u003E\\r\\n\"]', 'D', 1, 1, 0, '2022-11-15 08:07:06'),
+(21, 1, 1234, 12345, '<p><img alt=\"\" src=\"http://localhost:8080/pti-elearning/assets/images/fb161c55844a_test.png\" style=\"height:1080px; width:1920px\" />okokokokk</p>\r\n', '[\"\\u003Cp\\u003Eok\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003Eok\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003Eok\\u003C\\/p\\u003E\\r\\n\",\"\\u003Cp\\u003Eok\\u003C\\/p\\u003E\\r\\n\"]', 'B', 1, 1, 0, '2022-11-15 09:34:37'),
+(22, 1, 1234, 12345, 'Adaptive radiation in fishes started about number of million years ago1:', '[1200,500,1000,1500]', 'D', 1, 1, 0, '2022-11-15 09:35:54'),
+(23, 1, 1234, 12345, 'Adaptive radiation in fishes started about number of million years ago2:', '[1200,500,1000,1500]', 'B', 1, 1, 0, '2022-11-15 09:35:54'),
+(24, 1, 1234, 12345, 'Adaptive radiation in fishes started about number of million years ago3', '[1200,500,1000,1500]', 'A', 1, 1, 0, '2022-11-15 09:35:54'),
+(25, 1, 1234, 12345, 'Adaptive radiation in fishes started about number of million years ago4:', '[1200,500,1000,1500]', 'C', 1, 1, 0, '2022-11-15 09:35:54'),
+(26, 1, 1234, 12345, 'Adaptive radiation in fishes started about number of million years ago5:', '[1200,500,1000,1500]', 'D', 1, 1, 0, '2022-11-15 09:35:54');
 
 -- --------------------------------------------------------
 
@@ -839,9 +979,9 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`id`, `admin_id`, `name`, `enrollment_id`, `password`, `image`, `email`, `contact_no`, `gender`, `dob`, `father_name`, `father_designtn`, `address`, `batch_id`, `login_status`, `admission_date`, `status`, `payment_status`, `brewers_check`, `token`, `app_version`, `added_by`, `last_login_app`, `pay_mode`, `multi_batch`) VALUES
-(1, 1, 'Samuel Pardede', 'skywalker21', 'Synyster21', 'no_image', 'samueljovial21@gmail.com', '082168915818', 'Man', '2012-12-11', 'Not_Allowed', 'Not_Allowed', 'Not_Allowed', 'Not_Allowed', 1, '2022-10-06', 1, 1, 'Not_Allowed', 'Not_Allowed', 'Not_Allowed', 'Not_Allowed', '2022-10-06 09:24:14', 1, 'Not_Allowed'),
-(2, 1, 'Student_Test', 'ACAD1153', '75ee048ebd7eaabf3753536a5dde5093', 'base_img_221018083850.png', 'inibukangmail@gmail.com', '088888888888', 'male', '2022-10-18', 'Yes_Papa', 'No_Fat', 'Homeless', '[\"1\"]', 0, '2022-10-18', 1, 0, '', '', '', '', '0000-00-00 00:00:00', 0, ''),
-(3, 1, 'Hohoho', 'ACAD1273', 'b415e82ade00c8130eede763acd9fbd9', 'penguin1000_221018084259.jpg', 'animal@gmail.com', '1234567890', 'male', '2022-10-18', 'No_Papa', 'Bjirr', '', '[\"1\"]', 0, '2022-10-18', 1, 0, '4aEK17p8Hx', '1', '', '', '0000-00-00 00:00:00', 0, '');
+(4, 1, 'Yoimiya', 'SSF1317', '00404a6c7f0954e363c12434f6ce7067', 'yoimiya_genshin_impact_character_render_by_deg5270_depft9v-fullview_221024215356.png', 'yoimiya@gmail.com', '082168915818', 'female', '2001-06-21', 'Unknown', 'Me', 'Inazuma City', '[\"1\"]', 0, '2022-10-24', 1, 0, 'TnxyL0jtir', '1', '', '', '0000-00-00 00:00:00', 0, ''),
+(2, 1, 'Kamisato Ayaka', 'SSF1153', '6e12cf90ab474aa4175ac6ce335094e3', 'avatar_ayaka_221024213812.png', 'inibukangmail@gmail.com', '088888888888', 'female', '2002-09-28', 'Yes_Papa', 'Me', 'Inazuma, Kamisato Estate', '5', 1, '2022-10-18', 1, 0, '5heDbkxfq4', '1', '', 'student', '2022-11-07 19:45:25', 0, '[\"1\"]'),
+(3, 1, 'Keqing', 'SSF1273', '1e4483e833025ac10e6184e75cb2d19d', 'avatar_keqing.png', 'animal@gmail.com', '1234567890', 'female', '2002-11-20', 'No_Papa', 'Bjirr', 'Liyue', '[\"1\"]', 0, '2022-10-18', 1, 0, 'aKV5kNZGFC', '1', '', '', '0000-00-00 00:00:00', 0, '');
 
 -- --------------------------------------------------------
 
@@ -864,6 +1004,13 @@ CREATE TABLE `student_doubts_class` (
   `status` int(11) NOT NULL COMMENT '0 = pending, 1 = approve, 2 = decline',
   `admin_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `student_doubts_class`
+--
+
+INSERT INTO `student_doubts_class` (`doubt_id`, `student_id`, `teacher_id`, `batch_id`, `subjects_id`, `chapters_id`, `users_description`, `teacher_description`, `appointment_date`, `appointment_time`, `create_at`, `status`, `admin_id`) VALUES
+(1, 2, 18, 5, '1234', '12345', 'Pak... kamu nanyaaa', '', '0000-00-00', '', '2022-11-07 22:05:18', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -888,7 +1035,13 @@ CREATE TABLE `student_payment_history` (
 
 INSERT INTO `student_payment_history` (`id`, `student_id`, `batch_id`, `transaction_id`, `mode`, `amount`, `create_at`, `admin_id`) VALUES
 (1, 2, 1, 'Cash', 'offline', 0, '2022-10-18 10:08:50', 1),
-(2, 3, 1, 'Cash', 'offline', 0, '2022-10-18 10:12:59', 1);
+(2, 3, 1, 'Cash', 'offline', 0, '2022-10-18 10:12:59', 1),
+(3, 2, 1, 'Cash', 'offline', 0, '2022-10-24 21:36:54', 1),
+(4, 2, 1, 'Cash', 'offline', 0, '2022-10-24 21:38:12', 1),
+(5, 3, 1, 'Cash', 'offline', 0, '2022-10-24 21:39:42', 1),
+(6, 4, 1, 'Cash', 'offline', 0, '2022-10-24 21:53:56', 1),
+(7, 3, 1, 'Cash', 'offline', 0, '2022-10-24 22:00:59', 1),
+(8, 4, 1, 'Cash', 'offline', 0, '2022-10-24 22:01:18', 1);
 
 -- --------------------------------------------------------
 
@@ -909,7 +1062,7 @@ CREATE TABLE `subjects` (
 --
 
 INSERT INTO `subjects` (`id`, `subject_name`, `status`, `no_of_questions`, `admin_id`) VALUES
-(1234, 'Testing_Subject', 1, 1, 1);
+(1234, 'Testing_Subject', 1, 26, 1);
 
 -- --------------------------------------------------------
 
@@ -932,8 +1085,13 @@ CREATE TABLE `sudent_batchs` (
 --
 
 INSERT INTO `sudent_batchs` (`id`, `student_id`, `batch_id`, `status`, `create_at`, `added_by`, `admin_id`) VALUES
-(1, 2, 1, 0, '2022-10-18 10:08:50', 'Admin', 1),
-(2, 3, 1, 0, '2022-10-18 10:12:59', 'Admin', 1);
+(4, 2, 1, 0, '2022-10-24 21:38:12', 'Admin', 1),
+(7, 3, 1, 0, '2022-10-24 22:00:59', 'Admin', 1),
+(8, 4, 1, 0, '2022-10-24 22:01:18', 'Admin', 1),
+(9, 2, 2, 0, '2022-11-07 13:59:08', 'student', 1),
+(10, 2, 6, 0, '2022-11-07 14:39:26', 'student', 1),
+(11, 2, 4, 0, '2022-11-07 19:40:10', 'student', 1),
+(12, 2, 5, 0, '2022-11-07 19:45:25', 'student', 1);
 
 -- --------------------------------------------------------
 
@@ -1011,9 +1169,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `admin_id`, `name`, `email`, `password`, `role`, `teach_education`, `teach_image`, `teach_batch`, `teach_subject`, `teach_gender`, `parent_id`, `status`, `token`, `brewers_check`, `super_admin`, `access`) VALUES
-(1, '1', 'admin', 'admin@eacademy.com', '202cb962ac59075b964b07152d234b70', 1, '', '', '', '', '', 0, 1, '1', 'YxXw8b1fQ2', '1', ''),
-(15, '1', 'Sugeno', 'inigkgmail@gmail.com', '9310f83135f238b04af729fec041cca8', 3, 'No_Educate', 'base_img.png', '1', '[\"1234\"]', 'male', 1, 1, '', '', '', '{\"live_class\":\"1\",\"notice\":\"1\",\"assignment\":\"1\",\"extraclasses\":\"1\",\"doubtsask\":\"1\",\"video_lecture\":\"1\",\"course_content\":\"1\",\"question_manager\":\"1\",\"student_leave\":\"1\",\"student_manage\":\"1\",\"exam\":\"1\"}'),
-(16, '1', 'asd', 'asd@asd.com', '9310f83135f238b04af729fec041cca8', 3, '', 'penguin1000.jpg', '', '[\"1234\"]', 'female', 1, 1, '1', 'WimEU6qOuT', '', '{\"live_class\":\"1\",\"notice\":\"1\",\"assignment\":\"1\",\"extraclasses\":\"1\",\"doubtsask\":\"1\",\"video_lecture\":\"1\",\"course_content\":\"1\",\"question_manager\":\"1\",\"student_leave\":\"1\",\"student_manage\":\"1\",\"exam\":\"1\"}');
+(1, '1', 'admin', 'admin@ssf.com', '202cb962ac59075b964b07152d234b70', 1, '', '', '', '', '', 0, 1, '1', '2sjHTe9fRY', '1', ''),
+(17, '1', 'Rico', 'rico@gmail.com', 'be89e250d8388c5e7ded2f1630e5daa4', 3, 'Magister', 'base_img1.png', '2', '[\"1234\"]', 'male', 1, 1, '', '', '', '{\"live_class\":\"1\",\"notice\":\"1\",\"assignment\":\"1\",\"extraclasses\":\"1\",\"doubtsask\":\"1\",\"video_lecture\":\"1\",\"course_content\":\"1\",\"question_manager\":\"1\",\"student_leave\":\"1\",\"student_manage\":\"1\",\"exam\":\"1\"}'),
+(18, '1', 'Kowalski', 'kowalski@gmail.com', '9310f83135f238b04af729fec041cca8', 3, 'Bachelor', 'penguin.jpg', '3,4,5,6', '[\"1234\"]', 'male', 1, 1, '1', 'YesWMo2R9t', '', '{\"academics\":null,\"live_class\":\"1\",\"notice\":\"1\",\"assignment\":\"1\",\"extraclasses\":\"1\",\"doubtsask\":\"1\",\"video_lecture\":\"1\",\"question_manager\":\"1\",\"course_content\":\"1\",\"student_leave\":\"1\",\"student_manage\":\"1\",\"exam\":\"1\"}');
 
 -- --------------------------------------------------------
 
@@ -1033,6 +1191,14 @@ CREATE TABLE `vacancy` (
   `admin_id` int(11) NOT NULL,
   `added_at` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vacancy`
+--
+
+INSERT INTO `vacancy` (`id`, `title`, `description`, `start_date`, `last_date`, `mode`, `files`, `status`, `admin_id`, `added_at`) VALUES
+(1, 'Testing_Exam', 'This\'s just using for a development testing', '2022-10-28', '2022-10-29', 'Online', '[\"1120_-_Surat_Tugas_PkM_an_Harmiansyah.pdf\"]', 1, 1, '2022-10-28 12:48:08'),
+(2, 'Test_Lagi', 'Ini deskripsi', '2022-11-09', '2022-11-10', '', '[\"DRPL-ITERA_Tugas_1_Kelompok_2_Kelas_A.pdf\"]', 1, 1, '2022-11-07 22:19:53');
 
 -- --------------------------------------------------------
 
@@ -1431,31 +1597,31 @@ ALTER TABLE `attendance`
 -- AUTO_INCREMENT for table `batches`
 --
 ALTER TABLE `batches`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `batch_category`
 --
 ALTER TABLE `batch_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
 
 --
 -- AUTO_INCREMENT for table `batch_fecherd`
 --
 ALTER TABLE `batch_fecherd`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `batch_subcategory`
 --
 ALTER TABLE `batch_subcategory`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123457;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123462;
 
 --
 -- AUTO_INCREMENT for table `batch_subjects`
 --
 ALTER TABLE `batch_subjects`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `blog`
@@ -1479,13 +1645,13 @@ ALTER TABLE `blog_comments_reply`
 -- AUTO_INCREMENT for table `book_pdf`
 --
 ALTER TABLE `book_pdf`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `certificate`
 --
 ALTER TABLE `certificate`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `certificate_setting`
@@ -1515,13 +1681,13 @@ ALTER TABLE `enquiry`
 -- AUTO_INCREMENT for table `exams`
 --
 ALTER TABLE `exams`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `extra_classes`
 --
 ALTER TABLE `extra_classes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `extra_class_attendance`
@@ -1545,7 +1711,7 @@ ALTER TABLE `frontend_details`
 -- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `general_settings`
@@ -1557,7 +1723,7 @@ ALTER TABLE `general_settings`
 -- AUTO_INCREMENT for table `homeworks`
 --
 ALTER TABLE `homeworks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `leave_management`
@@ -1581,13 +1747,13 @@ ALTER TABLE `live_class_setting`
 -- AUTO_INCREMENT for table `mock_result`
 --
 ALTER TABLE `mock_result`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `notes_pdf`
 --
 ALTER TABLE `notes_pdf`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `notices`
@@ -1599,13 +1765,13 @@ ALTER TABLE `notices`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `old_paper_pdf`
 --
 ALTER TABLE `old_paper_pdf`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `practice_result`
@@ -1623,7 +1789,7 @@ ALTER TABLE `privacy_policy_data`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `site_details`
@@ -1635,19 +1801,19 @@ ALTER TABLE `site_details`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `student_doubts_class`
 --
 ALTER TABLE `student_doubts_class`
-  MODIFY `doubt_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `doubt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `student_payment_history`
 --
 ALTER TABLE `student_payment_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `subjects`
@@ -1659,7 +1825,7 @@ ALTER TABLE `subjects`
 -- AUTO_INCREMENT for table `sudent_batchs`
 --
 ALTER TABLE `sudent_batchs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `temp_data`
@@ -1683,13 +1849,13 @@ ALTER TABLE `theme_color`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `vacancy`
 --
 ALTER TABLE `vacancy`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `video_lectures`

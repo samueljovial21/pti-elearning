@@ -188,7 +188,7 @@
                           <input class="form-check-input require" checked type="radio" name="video_type" id="inlineRadio1" value="youtube">
                           <label class="form-check-label" for="inlineRadio1"><?php echo html_escape($this->common->languageTranslator('ltr_youtube'));?></label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <!-- <div class="form-check form-check-inline">
                           <input class="form-check-input require" type="radio" name="video_type" id="inlineRadio2" value="vimeo">
                           <label class="form-check-label" for="inlineRadio2"><?php echo html_escape($this->common->languageTranslator('ltr_vimeo'));?></label>
                         </div>
@@ -199,7 +199,7 @@
                         <div class="form-check form-check-inline">
                           <input class="form-check-input require" type="radio" name="video_type" id="inlineRadio4" value="embed">
                           <label class="form-check-label" for="inlineRadio4"><?php echo html_escape($this->common->languageTranslator('ltr_embed'));?></label>
-                        </div>
+                        </div> -->
                         <div class="form-check form-check-inline">
                           <input class="form-check-input require" type="radio" name="video_type" id="inlineRadio5" value="video">
                           <label class="form-check-label" for="inlineRadio5"><?php echo html_escape($this->common->languageTranslator('ltr_upload'));?></label>
