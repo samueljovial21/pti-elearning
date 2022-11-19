@@ -730,7 +730,7 @@
                                 <!-- Enquiry -->
                         <?php }
                         } ?>
-                        <li <?php echo (in_array("timezone", $cur_arr)) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/timezone">
+                        <!-- <li <?php echo (in_array("timezone", $cur_arr)) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/timezone">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
                                     <g>
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.827,14.239c0.067-0.474,0.12-0.952,0.204-1.423
@@ -811,7 +811,7 @@
                                 </svg>
                                 <span><?php echo html_escape($this->common->languageTranslator('ltr_set_time_zone')); ?></span>
                             </a>
-                        </li>
+                        </li> -->
                         <?php if ($_SESSION['super_admin'] == 1) {
                         ?>
                             <li class="has_sub_menu <?php echo (in_array("site-settings", $cur_arr) || in_array("home-page", $cur_arr) || in_array("course-page", $cur_arr) || in_array("about-page", $cur_arr) || in_array("course-manage", $cur_arr) || in_array("contact-page", $cur_arr) || in_array("facility-manage", $cur_arr)  || in_array("privacy-policy", $cur_arr) || in_array("terms-conditions", $cur_arr)) ? 'active' : ''; ?>"><a href="javascript:void(0);">
@@ -901,7 +901,7 @@
                                     <li <?php echo (in_array("terms-conditions", $cur_arr)) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/terms-conditions"><?php echo html_escape($this->common->languageTranslator('ltr_terms_conditions')); ?></a></li>
                                 </ul>
                             </li>
-                            <li class="has_sub_menu <?php echo (in_array("general-settings", $cur_arr)) ? 'active' : ''; ?>"><a href="javascript:void(0);">
+                            <!-- <li class="has_sub_menu <?php echo (in_array("general-settings", $cur_arr)) ? 'active' : ''; ?>"><a href="javascript:void(0);">
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="28px" height="28px">
                                         <g>
                                             <g>
@@ -916,19 +916,19 @@
                                     </svg>
                                     <span><?php echo html_escape($this->common->languageTranslator('ltr_general_settings')); ?></span>
                                 </a>
-                                <ul class="sub-menu">
+                                <ul class="sub-menu"> -->
                                     <!-- General Settings -->
-                                    <li <?php echo (in_array("language-settings", $cur_arr)) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/language-settings"><?php echo html_escape($this->common->languageTranslator('ltr_language_settings')); ?></a></li>
-                                    <li <?php echo (in_array("email-settings", $cur_arr)) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/email-settings"><?php echo html_escape($this->common->languageTranslator('ltr_email_settings')); ?></a></li>
-                                </ul>
-                            </li>
+                                    <!-- <li <?php /*echo (in_array("language-settings", $cur_arr)) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/language-settings"><?php echo html_escape($this->common->languageTranslator('ltr_language_settings')); ?></a></li>
+                                    <li <?php echo (in_array("email-settings", $cur_arr)) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/email-settings"><?php echo html_escape($this->common->languageTranslator('ltr_email_settings'));*/ ?></a></li> -->
+                                <!-- </ul>
+                            </li> -->
                         <?php
                         } ?>
                         <?php
                         // print_r($_SESSION);
                         if ($this->session->userdata('super_admin') == 1 && $this->session->userdata('role') == 1) {
                         ?>
-                            <li <?php echo in_array("certificate", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/certificate">
+                            <!-- <li <?php echo in_array("certificate", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/certificate">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
                                         <g>
                                             <g>
@@ -970,16 +970,16 @@
                                         </g>
                                     </svg>
                                     <span><?php echo html_escape($this->common->languageTranslator('ltr_certificate')); ?></span>
-                                </a></li>
-                        <?php
+                                </a></li> -->
+                            <?php
                         }
-                        
+
                         if (isset($access->enquiry) || $this->session->userdata['super_admin'] == 1) {
                             if ($access->enquiry == '1' || $this->session->userdata['super_admin'] == 1) {  ?>
                                 <!-- Enquiry -->
                         <?php }
                         } ?>
-                        
+
                         <!-- End of Navbar -->
 
                     </ul>

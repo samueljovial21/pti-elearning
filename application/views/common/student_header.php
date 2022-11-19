@@ -799,7 +799,7 @@
 								<span><?php echo html_escape($this->common->languageTranslator('ltr_attendance')); ?></span>
 							</a></li>
 
-						<li <?php echo in_array("certificate", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/certificate') : 'javascript:void(0)'; ?>">
+						<!-- <li <?php echo in_array("certificate", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/certificate') : 'javascript:void(0)'; ?>">
 								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
 									<g>
 										<g>
@@ -841,7 +841,7 @@
 									</g>
 								</svg>
 								<span><?php echo html_escape($this->common->languageTranslator('ltr_certificate')); ?></span>
-							</a></li>
+							</a></li> -->
 					</ul>
 				</div>
 			</div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2022 at 10:14 AM
+-- Generation Time: Nov 19, 2022 at 06:21 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -653,6 +653,14 @@ CREATE TABLE `leave_management` (
   `added_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `leave_management`
+--
+
+INSERT INTO `leave_management` (`id`, `teacher_id`, `student_id`, `admin_id`, `batch_id`, `subject`, `leave_msg`, `from_date`, `to_date`, `total_days`, `status`, `added_at`) VALUES
+(1, 0, 2, 1, 5, 'Hehe', 'Hello Sir,', '2022-11-19', '2022-11-20', 1, 1, '2022-11-19 04:30:14'),
+(2, 0, 2, 1, 5, 'SSSS', 'Hello Sir,', '2022-11-16', '2022-11-16', 0, 0, '2022-11-19 04:33:57');
+
 -- --------------------------------------------------------
 
 --
@@ -672,6 +680,18 @@ CREATE TABLE `live_class_history` (
   `admin_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `live_class_history`
+--
+
+INSERT INTO `live_class_history` (`id`, `uid`, `batch_id`, `subject_id`, `chapter_id`, `start_time`, `end_time`, `date`, `entry_date_time`, `admin_id`) VALUES
+(1, 1, 5, 1234, 12345, '12:04:09 pm', '', '2022-11-19', '2022-11-19 05:04:10', 0),
+(2, 1, 5, 1234, 12345, '12:04:41 pm', '', '2022-11-19', '2022-11-19 05:04:41', 0),
+(3, 1, 5, 1234, 12345, '12:04:47 pm', '', '2022-11-19', '2022-11-19 05:04:47', 0),
+(4, 18, 5, 1234, 12345, '12:05:43 pm', '12:08:22 pm', '2022-11-19', '2022-11-19 05:08:22', 0),
+(5, 1, 5, 1234, 12345, '12:07:04 pm', '', '2022-11-19', '2022-11-19 05:07:04', 0),
+(6, 18, 5, 1234, 12345, '12:09:15 pm', '', '2022-11-19', '2022-11-19 05:09:15', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -689,6 +709,13 @@ CREATE TABLE `live_class_setting` (
   `admin_id` int(11) NOT NULL,
   `added_at` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `live_class_setting`
+--
+
+INSERT INTO `live_class_setting` (`id`, `batch`, `zoom_api_key`, `zoom_api_secret`, `meeting_number`, `password`, `status`, `admin_id`, `added_at`) VALUES
+(1, 5, 'fUcGopjkSbmv8sbgoOl_DQ', 'DFTkywxcqcR5t1g3KNXSvOHHBpkR1QLwJuDZ', '9048561609', 'KW4ppT', 1, 1, '2022-11-19 12:03:53');
 
 -- --------------------------------------------------------
 
@@ -799,7 +826,8 @@ INSERT INTO `notifications` (`id`, `student_id`, `batch_id`, `notification_type`
 (6, 0, 0, 'Vacancy', 'New Upcoming Exam Added', 'student/vacancy', 0, '2022-11-07 22:19:53', '0000-00-00 00:00:00'),
 (7, 2, 5, 'Exam', 'New Mock Paper Added', 'student/mock-paper', 1, '2022-11-13 20:32:38', '2022-11-16 15:38:13'),
 (8, 2, 5, 'Exam', 'New Mock Paper Added', 'student/mock-paper', 1, '2022-11-15 09:38:43', '2022-11-16 15:38:13'),
-(9, 2, 5, 'Exam', 'New Practice Paper Added', 'student/practice-paper', 1, '2022-11-16 15:41:33', '2022-11-16 15:41:51');
+(9, 2, 5, 'Exam', 'New Practice Paper Added', 'student/practice-paper', 1, '2022-11-16 15:41:33', '2022-11-16 15:41:51'),
+(10, 2, 5, 'Video-Lecture', 'New Video Added', 'student/video-lecture', 1, '2022-11-18 17:03:56', '2022-11-18 17:10:40');
 
 -- --------------------------------------------------------
 
@@ -980,7 +1008,7 @@ CREATE TABLE `students` (
 
 INSERT INTO `students` (`id`, `admin_id`, `name`, `enrollment_id`, `password`, `image`, `email`, `contact_no`, `gender`, `dob`, `father_name`, `father_designtn`, `address`, `batch_id`, `login_status`, `admission_date`, `status`, `payment_status`, `brewers_check`, `token`, `app_version`, `added_by`, `last_login_app`, `pay_mode`, `multi_batch`) VALUES
 (4, 1, 'Yoimiya', 'SSF1317', '00404a6c7f0954e363c12434f6ce7067', 'yoimiya_genshin_impact_character_render_by_deg5270_depft9v-fullview_221024215356.png', 'yoimiya@gmail.com', '082168915818', 'female', '2001-06-21', 'Unknown', 'Me', 'Inazuma City', '[\"1\"]', 0, '2022-10-24', 1, 0, 'TnxyL0jtir', '1', '', '', '0000-00-00 00:00:00', 0, ''),
-(2, 1, 'Kamisato Ayaka', 'SSF1153', '6e12cf90ab474aa4175ac6ce335094e3', 'avatar_ayaka_221024213812.png', 'inibukangmail@gmail.com', '088888888888', 'female', '2002-09-28', 'Yes_Papa', 'Me', 'Inazuma, Kamisato Estate', '5', 1, '2022-10-18', 1, 0, '5heDbkxfq4', '1', '', 'student', '2022-11-07 19:45:25', 0, '[\"1\"]'),
+(2, 1, 'Kamisato Ayaka', 'SSF1153', '6e12cf90ab474aa4175ac6ce335094e3', 'avatar_ayaka_221024213812.png', 'inibukangmail@gmail.com', '088888888888', 'female', '2002-09-28', 'Yes_Papa', 'Me', 'Inazuma, Kamisato Estate', '5', 1, '2022-10-18', 1, 0, 'cMh03KjfFI', '1', '', 'student', '2022-11-07 19:45:25', 0, '[\"1\"]'),
 (3, 1, 'Keqing', 'SSF1273', '1e4483e833025ac10e6184e75cb2d19d', 'avatar_keqing.png', 'animal@gmail.com', '1234567890', 'female', '2002-11-20', 'No_Papa', 'Bjirr', 'Liyue', '[\"1\"]', 0, '2022-10-18', 1, 0, 'aKV5kNZGFC', '1', '', '', '0000-00-00 00:00:00', 0, '');
 
 -- --------------------------------------------------------
@@ -1169,9 +1197,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `admin_id`, `name`, `email`, `password`, `role`, `teach_education`, `teach_image`, `teach_batch`, `teach_subject`, `teach_gender`, `parent_id`, `status`, `token`, `brewers_check`, `super_admin`, `access`) VALUES
-(1, '1', 'admin', 'admin@ssf.com', '202cb962ac59075b964b07152d234b70', 1, '', '', '', '', '', 0, 1, '1', '2sjHTe9fRY', '1', ''),
+(1, '1', 'admin', 'admin@ssf.com', '202cb962ac59075b964b07152d234b70', 1, '', '', '', '', '', 0, 1, '1', 'H5NOfdhA0V', '1', ''),
 (17, '1', 'Rico', 'rico@gmail.com', 'be89e250d8388c5e7ded2f1630e5daa4', 3, 'Magister', 'base_img1.png', '2', '[\"1234\"]', 'male', 1, 1, '', '', '', '{\"live_class\":\"1\",\"notice\":\"1\",\"assignment\":\"1\",\"extraclasses\":\"1\",\"doubtsask\":\"1\",\"video_lecture\":\"1\",\"course_content\":\"1\",\"question_manager\":\"1\",\"student_leave\":\"1\",\"student_manage\":\"1\",\"exam\":\"1\"}'),
-(18, '1', 'Kowalski', 'kowalski@gmail.com', '9310f83135f238b04af729fec041cca8', 3, 'Bachelor', 'penguin.jpg', '3,4,5,6', '[\"1234\"]', 'male', 1, 1, '1', 'YesWMo2R9t', '', '{\"academics\":null,\"live_class\":\"1\",\"notice\":\"1\",\"assignment\":\"1\",\"extraclasses\":\"1\",\"doubtsask\":\"1\",\"video_lecture\":\"1\",\"question_manager\":\"1\",\"course_content\":\"1\",\"student_leave\":\"1\",\"student_manage\":\"1\",\"exam\":\"1\"}');
+(18, '1', 'Kowalski', 'kowalski@gmail.com', '9310f83135f238b04af729fec041cca8', 3, 'Bachelor', 'penguin.jpg', '3,4,5,6', '[\"1234\"]', 'male', 1, 1, '1', 'mbs5e30TZM', '', '{\"academics\":null,\"live_class\":\"1\",\"notice\":\"1\",\"assignment\":\"1\",\"extraclasses\":\"1\",\"doubtsask\":\"1\",\"video_lecture\":\"1\",\"question_manager\":\"1\",\"course_content\":\"1\",\"student_leave\":\"1\",\"student_manage\":\"1\",\"exam\":\"1\"}');
 
 -- --------------------------------------------------------
 
@@ -1222,6 +1250,13 @@ CREATE TABLE `video_lectures` (
   `added_at` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `video_lectures`
+--
+
+INSERT INTO `video_lectures` (`id`, `admin_id`, `title`, `batch`, `topic`, `subject`, `description`, `url`, `video_type`, `preview_type`, `status`, `added_by`, `added_at`) VALUES
+(1, 1, 'Muehehehe', '5', 'Testing_Chapter', 'Testing_Subject', 'Muehehe', 'uploads/video/Video_1326781007758564.mp4', 'video', 'preview', 1, 1, '2022-11-18 17:03:56');
+
 -- --------------------------------------------------------
 
 --
@@ -1246,6 +1281,13 @@ CREATE TABLE `zoom_api_credentials` (
   `android_api_key` varchar(250) NOT NULL,
   `android_api_secret` varchar(250) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `zoom_api_credentials`
+--
+
+INSERT INTO `zoom_api_credentials` (`id`, `android_api_key`, `android_api_secret`) VALUES
+(1, 'fUcGopjkSbmv8sbgoOl_DQ', 'DFTkywxcqcR5t1g3KNXSvOHHBpkR1QLwJuDZ');
 
 --
 -- Indexes for dumped tables
@@ -1729,19 +1771,19 @@ ALTER TABLE `homeworks`
 -- AUTO_INCREMENT for table `leave_management`
 --
 ALTER TABLE `leave_management`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `live_class_history`
 --
 ALTER TABLE `live_class_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `live_class_setting`
 --
 ALTER TABLE `live_class_setting`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `mock_result`
@@ -1765,7 +1807,7 @@ ALTER TABLE `notices`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `old_paper_pdf`
@@ -1861,7 +1903,7 @@ ALTER TABLE `vacancy`
 -- AUTO_INCREMENT for table `video_lectures`
 --
 ALTER TABLE `video_lectures`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `views_notification_student`
@@ -1873,7 +1915,7 @@ ALTER TABLE `views_notification_student`
 -- AUTO_INCREMENT for table `zoom_api_credentials`
 --
 ALTER TABLE `zoom_api_credentials`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

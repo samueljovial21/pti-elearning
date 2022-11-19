@@ -20,11 +20,11 @@
                                 <label for="auth_remember"><?php echo html_escape($this->common->languageTranslator('ltr_remember_me')); ?></label>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-md-right">
+                        <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-md-right">
                             <div class="loginLinks">
                                 <a class="form_link" href="<?php echo base_url('forgot-password'); ?>"><?php echo html_escape($this->common->languageTranslator('ltr_forgot_p')); ?></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="login_btn_wrapper">
                         <div class="row align-items-center">
