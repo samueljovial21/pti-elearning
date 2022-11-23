@@ -15,11 +15,7 @@ class Ajaxcall extends CI_Controller
 
         // check select language
         $language = $this->general_settings('language_name');
-        if ($language == "french") {
-            $this->lang->load('french_lang', 'french');
-        } else if ($language == "arabic") {
-            $this->lang->load('arabic_lang', 'arabic');
-        } else {
+        if ($language == "english") {
             $this->lang->load('english_lang', 'english');
         }
     }
