@@ -289,7 +289,7 @@
 							<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 								<div class="edu_btn_wrapper">
 									<input type="button" value="<?php echo html_escape($this->common->languageTranslator('ltr_upload_question')); ?>" class="btn btn-primary upload_new_question" />
-									<a href="<?php echo base_url(); ?>uploads/demo/uploadQuestionExcel.xlsx" class="btn btn-primary"><?php echo html_escape($this->common->languageTranslator('ltr_download_demo_file')); ?></a>
+									<a href="<?php echo base_url(); ?>uploads/demo/Multi-Question-Template.xlsx" class="btn btn-primary"><?php echo html_escape($this->common->languageTranslator('ltr_download_demo_file')); ?></a>
 								</div>
 							</div>
 						</div>
