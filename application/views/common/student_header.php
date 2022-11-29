@@ -445,7 +445,7 @@
 								</svg>
 								<span><?php echo html_escape($this->common->languageTranslator('ltr_extra_classes')); ?></span>
 							</a></li>
-						<li <?php echo in_array("video-lecture", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/video-lecture') : 'javascript:void(0)'; ?>">
+						<!-- <li <?php echo in_array("video-lecture", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/video-lecture') : 'javascript:void(0)'; ?>">
 								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
 									<g>
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M25.753,23.958c-7.167,0-14.334,0-21.506,0
@@ -473,7 +473,7 @@
 								</svg>
 								<span><?php echo html_escape($this->common->languageTranslator('ltr_video_lecture')); ?></span>
 							</a>
-						</li>
+						</li> -->
 
 
 						<li <?php echo in_array("vacancy", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?= (!empty($this->session->userdata('batch_id'))) ? base_url('student/vacancy') : 'javascript:void(0)'; ?>">
