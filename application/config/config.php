@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/pti-elearning/';
+$config['base_url'] = 'http://localhost:8080/pti-elearning';
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -308,7 +308,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = 'fsjkpnxiocbupsebuumqbpcqdactwhctagkw';
+$config['encryption_key'] = 'hehehehehehehehehehehehehehehehehehe';
 
 /*
 |--------------------------------------------------------------------------

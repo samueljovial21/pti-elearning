@@ -263,7 +263,7 @@
                                 </svg>
                                 <span><?php echo html_escape($this->common->languageTranslator('ltr_dashboard')); ?></span>
                             </a>
-                        </li>
+                        <!-- </li>
                         <?php if ($this->session->userdata['super_admin'] == 1) { ?>
 
                             <li <?php echo in_array("manage-admin", $cur_arr) ? 'class="active"' : ''; ?>><a href="<?php echo base_url() . $profile; ?>admin/manage-admin">
@@ -286,7 +286,7 @@
                                     </svg>
                                     <span><?php echo html_escape($this->common->languageTranslator('ltr_manager_admin')); ?></span>
                                 </a>
-                            </li>
+                            </li> -->
 
                         <?php  } ?>
                         <?php
@@ -676,7 +676,7 @@
                         }
                         if (isset($access->video_lecture) || $this->session->userdata['super_admin'] == 1) {
                             if ($access->video_lecture == '1' || $this->session->userdata['super_admin'] == 1) { ?>
-                                <li <?php echo (in_array("video-manage", $cur_arr)) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/video-manage">
+                                <!-- <li <?php echo (in_array("video-manage", $cur_arr)) ? 'class="active"' : ''; ?>><a href="<?php echo base_url(); ?>admin/video-manage">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
                                             <g>
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M25.753,23.958c-7.167,0-14.334,0-21.506,0
@@ -704,7 +704,7 @@
                                         </svg>
                                         <span><?php echo html_escape($this->common->languageTranslator('ltr_video_lecture_manager')); ?></span>
                                     </a>
-                                </li>
+                                </li> -->
                             <?php }
                         }
                         if (isset($access->doubtsask) || $this->session->userdata['super_admin'] == 1) {
