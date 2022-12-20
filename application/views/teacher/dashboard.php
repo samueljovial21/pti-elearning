@@ -32,35 +32,35 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-					<a href="<?php echo base_url() ?>teacher/extra-classes">
-						<div class="edu_color_boxes box_left">
-							<div class="edu_dash_box_data">
-								<p><?php echo html_escape($this->common->languageTranslator('ltr_today_extra_class')); ?></p>
-								<h3><?php echo html_escape($total_extra_class); ?></h3>
-							</div>
-							<div class="edu_dash_box_icon">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-									<g>
-										<path d="M23.729,1.176H0.271v15.705H8.82l-2.946,5.943h2.271l1.009-2.046h5.266l1.008,2.046h2.299l-2.967-5.94
-                            		h8.967V1.176H23.729z M9.903,19.262l1.171-2.378H12.5l1.172,2.378H9.903z M22.717,15.871H1.282V2.187h21.435V15.871z" />
-										<rect x="0.922" y="1.604" />
-									</g>
-								</svg>
-							</div>
-							<div class="edu_dash_info">
-								<ul>
-									<li>
-										<p><?php echo html_escape($this->common->languageTranslator('ltr_previous')); ?> <span><?php echo html_escape($total_previous_class); ?></span></p>
-									</li>
-									<li>
-										<p><?php echo html_escape($this->common->languageTranslator('ltr_upcoming')); ?> <span><?php echo html_escape($total_upcoming_class); ?></span></p>
-									</li>
-									<ul>
-							</div>
-						</div>
-					</a>
-				</div>
+				<!--<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">-->
+				<!--	<a href="<?php echo base_url() ?>teacher/extra-classes">-->
+				<!--		<div class="edu_color_boxes box_left">-->
+				<!--			<div class="edu_dash_box_data">-->
+				<!--				<p><?php echo html_escape($this->common->languageTranslator('ltr_today_extra_class')); ?></p>-->
+				<!--				<h3><?php echo html_escape($total_extra_class); ?></h3>-->
+				<!--			</div>-->
+				<!--			<div class="edu_dash_box_icon">-->
+				<!--				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">-->
+				<!--					<g>-->
+				<!--						<path d="M23.729,1.176H0.271v15.705H8.82l-2.946,5.943h2.271l1.009-2.046h5.266l1.008,2.046h2.299l-2.967-5.94-->
+    <!--                        		h8.967V1.176H23.729z M9.903,19.262l1.171-2.378H12.5l1.172,2.378H9.903z M22.717,15.871H1.282V2.187h21.435V15.871z" />-->
+				<!--						<rect x="0.922" y="1.604" />-->
+				<!--					</g>-->
+				<!--				</svg>-->
+				<!--			</div>-->
+				<!--			<div class="edu_dash_info">-->
+				<!--				<ul>-->
+				<!--					<li>-->
+				<!--						<p><?php echo html_escape($this->common->languageTranslator('ltr_previous')); ?> <span><?php echo html_escape($total_previous_class); ?></span></p>-->
+				<!--					</li>-->
+				<!--					<li>-->
+				<!--						<p><?php echo html_escape($this->common->languageTranslator('ltr_upcoming')); ?> <span><?php echo html_escape($total_upcoming_class); ?></span></p>-->
+				<!--					</li>-->
+				<!--					<ul>-->
+				<!--			</div>-->
+				<!--		</div>-->
+				<!--	</a>-->
+				<!--</div>-->
 
 
 				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -131,34 +131,34 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-					<a href="<?php echo base_url() ?>teacher/doubts-class">
-						<div class="edu_color_boxes box_other">
-							<div class="edu_dash_box_data">
-								<p><?php echo html_escape($this->common->languageTranslator('ltr_student_doubts_ask')); ?></p>
-								<h3><?php echo $doubts_data; ?></h3>
-							</div>
-							<div class="edu_dash_box_icon">
-								<svg enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-									<g>
-										<path d="m424 0h-286c-36.393 0-66 29.607-66 66v374c0 39.701 32.299 72 72 72h280c8.837 0 16-7.164 16-16s-7.163-16-16-16h-280c-22.056 0-40-17.944-40-40s17.944-40 40-40h280c8.837 0 16-7.164 16-16v-368c0-8.836-7.163-16-16-16zm-320 371.431v-305.431c0-18.778 15.222-34 34-34h1c2.761 0 5 2.239 5 5v326.164c0 2.615-2.013 4.816-4.622 4.983-10.085.643-19.611 3.373-28.152 7.76-3.303 1.696-7.226-.764-7.226-4.476z" />
-										<path d="m424 424h-280c-8.837 0-16 7.164-16 16s7.163 16 16 16h280c8.837 0 16-7.164 16-16s-7.163-16-16-16z" />
-									</g>
-								</svg>
-							</div>
-							<div class="edu_dash_info">
-								<ul>
-									<li>
-										<p><?php echo html_escape($this->common->languageTranslator('ltr_aproved')); ?> <span><?php echo $doubts_data_aprove; ?></span></p>
-									</li>
-									<li>
-										<p><?php echo html_escape($this->common->languageTranslator('ltr_pending')); ?> <span><?php echo $doubts_data_pending; ?></span></p>
-									</li>
-									<ul>
-							</div>
-						</div>
-					</a>
-				</div>
+				<!--<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">-->
+				<!--	<a href="<?php echo base_url() ?>teacher/doubts-class">-->
+				<!--		<div class="edu_color_boxes box_other">-->
+				<!--			<div class="edu_dash_box_data">-->
+				<!--				<p><?php echo html_escape($this->common->languageTranslator('ltr_student_doubts_ask')); ?></p>-->
+				<!--				<h3><?php echo $doubts_data; ?></h3>-->
+				<!--			</div>-->
+				<!--			<div class="edu_dash_box_icon">-->
+				<!--				<svg enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">-->
+				<!--					<g>-->
+				<!--						<path d="m424 0h-286c-36.393 0-66 29.607-66 66v374c0 39.701 32.299 72 72 72h280c8.837 0 16-7.164 16-16s-7.163-16-16-16h-280c-22.056 0-40-17.944-40-40s17.944-40 40-40h280c8.837 0 16-7.164 16-16v-368c0-8.836-7.163-16-16-16zm-320 371.431v-305.431c0-18.778 15.222-34 34-34h1c2.761 0 5 2.239 5 5v326.164c0 2.615-2.013 4.816-4.622 4.983-10.085.643-19.611 3.373-28.152 7.76-3.303 1.696-7.226-.764-7.226-4.476z" />-->
+				<!--						<path d="m424 424h-280c-8.837 0-16 7.164-16 16s7.163 16 16 16h280c8.837 0 16-7.164 16-16s-7.163-16-16-16z" />-->
+				<!--					</g>-->
+				<!--				</svg>-->
+				<!--			</div>-->
+				<!--			<div class="edu_dash_info">-->
+				<!--				<ul>-->
+				<!--					<li>-->
+				<!--						<p><?php echo html_escape($this->common->languageTranslator('ltr_aproved')); ?> <span><?php echo $doubts_data_aprove; ?></span></p>-->
+				<!--					</li>-->
+				<!--					<li>-->
+				<!--						<p><?php echo html_escape($this->common->languageTranslator('ltr_pending')); ?> <span><?php echo $doubts_data_pending; ?></span></p>-->
+				<!--					</li>-->
+				<!--					<ul>-->
+				<!--			</div>-->
+				<!--		</div>-->
+				<!--	</a>-->
+				<!--</div>-->
 			</div>
 		</div>
 		<!-- Tambahan -->

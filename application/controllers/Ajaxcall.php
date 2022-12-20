@@ -15,7 +15,11 @@ class Ajaxcall extends CI_Controller
 
         // check select language
         $language = $this->general_settings('language_name');
-        if ($language == "english") {
+        if ($language == "french") {
+            $this->lang->load('french_lang', 'french');
+        } else if ($language == "arabic") {
+            $this->lang->load('arabic_lang', 'arabic');
+        } else {
             $this->lang->load('english_lang', 'english');
         }
     }
@@ -1793,6 +1797,7 @@ class Ajaxcall extends CI_Controller
                     				            ' . $this->lang->line('ltr_notice') . '
                     				        </a>
                     				    </li>
+                    				    <!--
     									<li>
                     				        <a href="' . base_url() . $profile . '/doubts-ask/' . $student['s_id'] . '">
                     				            <span class="action_drop_icon">
@@ -1801,6 +1806,8 @@ class Ajaxcall extends CI_Controller
                     				            ' . $this->lang->line('ltr_doubts_ask') . ' 
                     				        </a>
                     				    </li>
+                    				    -->
+                    				    <!--
                     				    <li>
                     				        <a href="' . base_url() . $profile . '/add-student/' . $student['s_id'] . '">
                     				            <span class="action_drop_icon">
@@ -1809,6 +1816,7 @@ class Ajaxcall extends CI_Controller
                     				            ' . $this->lang->line('ltr_edit') . '
                     				        </a>
                     				    </li>
+                    				    -->
                     				    <li>
                     				        <a href="javascript:void(0);" class="deleteData" title="Delete" data-id="' . $student['s_id'] . '" data-table="students">
                     				            <span class="action_drop_icon">
@@ -1907,6 +1915,7 @@ class Ajaxcall extends CI_Controller
                     				            ' . $this->lang->line('ltr_notice') . '
                     				        </a>
                     				    </li>
+                    				    <!--
     									<li>
                     				        <a href="' . base_url() . $profile . '/doubts-ask/' . $student['s_id'] . '">
                     				            <span class="action_drop_icon">
@@ -1915,6 +1924,7 @@ class Ajaxcall extends CI_Controller
                     				           ' . $this->lang->line('ltr_doubts_ask') . '
                     				        </a>
                     				    </li>
+                    				    -->
                     				    <li>
                     				        <a href="javascript:void(0);" class="changePassModal" data-id="' . $student['s_id'] . '">
                     				            <span class="action_drop_icon">
@@ -4750,6 +4760,7 @@ class Ajaxcall extends CI_Controller
         				            ' . $this->lang->line('ltr_notice') . '
         				        </a>
         				    </li>
+        				    <!--
 							<li>
         				        <a href="' . base_url() . 'admin/doubts-class/' . $teach['id'] . '">
         				            <span class="action_drop_icon">
@@ -4758,6 +4769,7 @@ class Ajaxcall extends CI_Controller
         				            ' . $this->lang->line('ltr_doubts_class') . '
         				        </a>
         				    </li>
+        				    -->
         				    <li>
         				        <a href="javascript:void(0);" class="edit_teacher" title="Edit" data-id="' . $teach['id'] . '" data-subject="' . implode(",", json_decode($teach['teach_subject'])) . '" data-img="' . $teach['teach_image'] . '">
         				            <span class="action_drop_icon">

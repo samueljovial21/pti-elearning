@@ -31,24 +31,6 @@
 </div>
 <!-- Logout end-->
 <!-- live class start-->
-<div id="liveclssPopup" class="liveclss_wrap" style="display: block;">
-    <div class="liveclss_popup_wrap text-center">
-        <div class="liveclss_popup_inner ">
-            <h4 class="edu_title padderBottom10"><?php echo html_escape($this->common->languageTranslator('ltr_active_live_class'));?></h4>
-            <div class="liveclss_teacher_wrap">
-                <div class="liveclss_teacherimg">
-                    <img src="" class="img-fluid live_teacher_image" alt="image">
-                </div>
-                <div class="liveclss_teachername">
-                    <h3 class="tname_title"></h3>
-                </div>
-            </div>
-            <h3 class="liveclss_sub"></h3>
-            <p class="liveclss_topic"> </p>
-            <a href="<?php echo base_url();?>student/start-class/<?php echo $this->session->userdata('batch_id');?>" class="edu_admin_btn liveclss_btn mt-3"><?php echo html_escape($this->common->languageTranslator('ltr_join'));?></a>
-        </div>
-    </div>
-</div>
 <!-- live class end-->
 
    

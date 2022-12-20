@@ -129,26 +129,26 @@
                                <!--     <input type="checkbox" class="academics" name="academics" value="1"></label>-->
                                 <label><?php echo html_escape($this->common->languageTranslator('ltr_homework'));?>
                                     <input type="checkbox" class="assignment" name="assignment" value="1"></label>
-                                <label><?php echo html_escape($this->common->languageTranslator('ltr_live_class'));?>
-                                    <input type="checkbox" class="live_class" name="live_class" value="1"></label>
+                                <!-- <label><?php echo html_escape($this->common->languageTranslator('ltr_live_class'));?>
+                                    <input type="checkbox" class="live_class" name="live_class" value="1"></label> -->
                                 <label><?php echo html_escape($this->common->languageTranslator('ltr_notice'));?>
                                     <input type="checkbox" class="notice" name="notice" value="1"></label>
-                                <label><?php echo html_escape($this->common->languageTranslator('ltr_extra_classes'));?>
-                                    <input type="checkbox" class="extraclasses" name="extraclasses" value="1"></label>
+                                <!-- <label><?php echo html_escape($this->common->languageTranslator('ltr_extra_classes'));?>
+                                    <input type="checkbox" class="extraclasses" name="extraclasses" value="1"></label> -->
                                 <label><?php echo html_escape($this->common->languageTranslator('ltr_library_manager'));?>
                                     <input type="checkbox" class="course_content" name="course_content" value="1"></label>
                                 <label><?php echo html_escape($this->common->languageTranslator('ltr_question_manager'));?>
                                     <input type="checkbox" class="question_manager" name="question_manager" value="1"></label>
-                                <label><?php echo html_escape($this->common->languageTranslator('ltr_video_lecture_manager'));?>
+                                <!-- <label><?php echo html_escape($this->common->languageTranslator('ltr_video_lecture_manager'));?>
                                     <input type="checkbox" class="video_lecture" name="video_lecture" value="1"></label>
                                 <label><?php echo html_escape($this->common->languageTranslator('ltr_doubts_ask'));?>
                                     <input type="checkbox" class="doubtsask" name="doubtsask" value="1"></label>
                                 <label><?php echo html_escape($this->common->languageTranslator('ltr_exam'));?>
-                                    <input type="checkbox" class="exam" name="exam" value="1"></label>  
+                                    <input type="checkbox" class="exam" name="exam" value="1"></label>   -->
                                 <label><?php echo html_escape($this->common->languageTranslator('ltr_manage_student_leave'));?>
                                     <input type="checkbox" class="student_leave" name="student_leave" value="1"></label>  
-                                <label><?php echo html_escape($this->common->languageTranslator('ltr_student_details'));?>
-                                    <input type="checkbox" class="student_manage" name="student_manage" value="1"></label>                               
+                                <!-- <label><?php echo html_escape($this->common->languageTranslator('ltr_student_details'));?>
+                                    <input type="checkbox" class="student_manage" name="student_manage" value="1"></label>                                -->
                             </div>
                         </div>
                     </div>

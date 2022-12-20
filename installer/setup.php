@@ -104,10 +104,9 @@
  
 <head>
 <meta charset="utf-8" />
-<title> SSF E-Learning - Installer Page</title>
+<title> E Academy - Installer Page</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<meta name="author"  content="SSF"/>
-
+<meta name="author"  content="Aquamarine"/>
 <meta name="MobileOptimized" content="320">
 <!--srart theme style -->
 <link href="<?php echo $basepath;?>adminassets/css/admin_main.css" rel="stylesheet" type="text/css"/>

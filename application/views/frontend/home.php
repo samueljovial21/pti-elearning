@@ -297,7 +297,7 @@
 							<li class="nav-item">
 										<a class="nav-link " href="<?=base_url('courses-offered')?>">
 											<span class="edu_tab_icons">
-											More batch
+											More Courses
 											</span>
 										</a>
 									</li>

@@ -30,53 +30,49 @@
 			</div>
 		</section>
 		<!----- Contact Form Section Start ----->
-		<section class="edu_form_wrapper">
-			<div class="container">
-				<div class="row"> 
-			
-					<div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0">
-						<div class="edu_form_container withoutMapFrm">
-							<h4><?php echo html_escape($this->common->languageTranslator('ltr_sign_purchase'));?></h4>
-							<input type="hidden" value="<?php echo base_url()?>" id="baseUrlId">
-							<form method="post">
-								<?php
-							//	print_r($singel_batches);
-    								if($singel_batches){
-    								    ?>
-    								        <input type="hidden" name="batchId" value="<?php echo $singel_batches[0]['id'] ;?>" id="batchId">
-    							    	<?php 
-								    }
-								?>
-								<div class="row">
-									<div class="col-lg-6 col-md-6 col-sm-12 col-12">
-										<div class="edu_field_holder">
-										    <lable><?php echo html_escape($this->common->languageTranslator('ltr_name'));?> *</lable>
-											<input type="text" class="edu_form_field require" placeholder="<?php echo html_escape($this->common->languageTranslator('ltr_enter_your_name'));?> *" name="name" >
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-sm-12 col-12">
-										<div class="edu_field_holder">
-										    <lable><?php echo html_escape($this->common->languageTranslator('ltr_email'));?> *</lable>
-											<input type="text" class="edu_form_field require" placeholder="<?php echo html_escape($this->common->languageTranslator('ltr_enter_your_email'));?> *" data-valid="email" data-error="<?php echo html_escape($this->common->languageTranslator('ltr_valid_enter_your_email'));?>" name="email">
-										</div>
-									</div>
-									
-									<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-										<div class="edu_field_holder">
-										    <lable><?php echo html_escape($this->common->languageTranslator('ltr_mobile_number'));?> *</lable>
-											<input type="text" class="edu_form_field require" placeholder="<?php echo html_escape($this->common->languageTranslator('ltr_enter_your_phone'));?> *" data-valid="mobile" data-error="<?php echo html_escape($this->common->languageTranslator('ltr_valid_enter_your_phone'));?>" name="mobile" maxlength="12">
-										</div>
-									</div>
-									
-									<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-										<button type="button" class="edu_btn enrollNowSubmit"><?php echo html_escape($this->common->languageTranslator('ltr_submit'));?></button>
-									</div>
-								</div>
-							</form> 
-							<div id="paymentDetails"> </div>							
-						</div>
-					</div>
+		<div class="container">
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center" onclick="window.open('https://wa.me/6281379523955', '_blank');">
+			<div class="edu_contact_section">
+				<div class="edu_contact_section_inner">
+					<i class="icofont-ui-dial-phone"></i>
+					<h4><?php echo html_escape($this->common->languageTranslator('ltr_contact_no')); ?></h4>
+					<?php
+					if (!empty($frontend_details[0]['mobile']))
+						echo '<a href="tel:+' . $frontend_details[0]['mobile'] . '">' . $frontend_details[0]['mobile'] . '</a>';
+					else
+						echo '<a href="tel:+91 9999999999">+91 9999999999</a>';
+					?>
 				</div>
 			</div>
-		</section>
-	</section>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center" onclick="window.open('https://maps.app.goo.gl/oPrEdc6vjPJdJcRc7', '_blank');">
+			<div class="edu_contact_section">
+				<div class="edu_contact_section_inner">
+					<i class="icofont-map-pins"></i>
+					<h4>Alamat kami</h4>
+					<?php
+					if (!empty($frontend_details[0]['address']))
+						echo '<a>' . $frontend_details[0]['address'] . '</a>';
+					else
+						echo '<a>04 A, Agroha Nagar, Dewas, Madhya Pradesh 455001</a>';
+					?>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+			<div class="edu_contact_section">
+				<div class="edu_contact_section_inner">
+					<i class="icofont-email"></i>
+					<h4><?php echo html_escape($this->common->languageTranslator('ltr_email_us_on')); ?></h4>
+					<?php
+					if (!empty($frontend_details[0]['email']))
+						echo '<a href="mailto:' . $frontend_details[0]['email'] . '">' . $frontend_details[0]['email'] . '</a>';
+					else
+						echo '<a href="mailto:example@email.com">example@email.com</a>';
+					?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

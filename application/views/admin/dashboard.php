@@ -172,25 +172,25 @@
                         </div>
                     </div>
                     <!-- This Should be Doubt Class -->
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <a href="<?php echo base_url()?>admin/doubts-classes">
-                        <div class="edu_color_boxes box_other">
-                            <div class="edu_dash_box_data">
-                                <p><?php echo html_escape($this->common->languageTranslator('ltr_student_doubts_ask'));?></p>
-                                <h3><?php echo $doubts_data;?></h3>
-                            </div>
-                            <div class="edu_dash_box_icon">
-                                <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m424 0h-286c-36.393 0-66 29.607-66 66v374c0 39.701 32.299 72 72 72h280c8.837 0 16-7.164 16-16s-7.163-16-16-16h-280c-22.056 0-40-17.944-40-40s17.944-40 40-40h280c8.837 0 16-7.164 16-16v-368c0-8.836-7.163-16-16-16zm-320 371.431v-305.431c0-18.778 15.222-34 34-34h1c2.761 0 5 2.239 5 5v326.164c0 2.615-2.013 4.816-4.622 4.983-10.085.643-19.611 3.373-28.152 7.76-3.303 1.696-7.226-.764-7.226-4.476z"/><path d="m424 424h-280c-8.837 0-16 7.164-16 16s7.163 16 16 16h280c8.837 0 16-7.164 16-16s-7.163-16-16-16z"/></g></svg>
-                            </div>
-                            <div class="edu_dash_info">
-                                <ul>
-                                    <li><p><?php echo html_escape($this->common->languageTranslator('ltr_aproved'));?> <span><?php echo $doubts_data_aprove;?></span></p></li>
-                                    <li><p><?php echo html_escape($this->common->languageTranslator('ltr_pending'));?> <span><?php echo $doubts_data_pending;?></span></p></li>
-                                <ul>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
+                    <!--<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">-->
+                    <!--    <a href="<?php echo base_url()?>admin/doubts-classes">-->
+                    <!--    <div class="edu_color_boxes box_other">-->
+                    <!--        <div class="edu_dash_box_data">-->
+                    <!--            <p><?php echo html_escape($this->common->languageTranslator('ltr_student_doubts_ask'));?></p>-->
+                    <!--            <h3><?php echo $doubts_data;?></h3>-->
+                    <!--        </div>-->
+                    <!--        <div class="edu_dash_box_icon">-->
+                    <!--            <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m424 0h-286c-36.393 0-66 29.607-66 66v374c0 39.701 32.299 72 72 72h280c8.837 0 16-7.164 16-16s-7.163-16-16-16h-280c-22.056 0-40-17.944-40-40s17.944-40 40-40h280c8.837 0 16-7.164 16-16v-368c0-8.836-7.163-16-16-16zm-320 371.431v-305.431c0-18.778 15.222-34 34-34h1c2.761 0 5 2.239 5 5v326.164c0 2.615-2.013 4.816-4.622 4.983-10.085.643-19.611 3.373-28.152 7.76-3.303 1.696-7.226-.764-7.226-4.476z"/><path d="m424 424h-280c-8.837 0-16 7.164-16 16s7.163 16 16 16h280c8.837 0 16-7.164 16-16s-7.163-16-16-16z"/></g></svg>-->
+                    <!--        </div>-->
+                    <!--        <div class="edu_dash_info">-->
+                    <!--            <ul>-->
+                    <!--                <li><p><?php echo html_escape($this->common->languageTranslator('ltr_aproved'));?> <span><?php echo $doubts_data_aprove;?></span></p></li>-->
+                    <!--                <li><p><?php echo html_escape($this->common->languageTranslator('ltr_pending'));?> <span><?php echo $doubts_data_pending;?></span></p></li>-->
+                    <!--            <ul>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    </a>-->
+                    <!--</div>-->
                     <!-- This Should be payment/revanue -->
                 <?php } ?>
             </div>
@@ -436,20 +436,20 @@
                                             <?php echo html_escape($this->common->languageTranslator('ltr_batch_manager')); ?>
                                         </a>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                                        <a class="edu_quick_links light_sky_bg" target="_blank" href="<?php echo base_url(); ?>admin/student-manage">
-                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.011 448.011" style="enable-background:new 0 0 448.011 448.011;" xml:space="preserve">
-                                                <g>
-                                                    <g>
-                                                        <path d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4
-                                                        l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472
-                                                        l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <?php echo html_escape($this->common->languageTranslator('ltr_student_manager')); ?>
-                                        </a>
-                                    </div>
+                                    <!--<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">-->
+                                    <!--    <a class="edu_quick_links light_sky_bg" target="_blank" href="<?php echo base_url(); ?>admin/student-manage">-->
+                                    <!--        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.011 448.011" style="enable-background:new 0 0 448.011 448.011;" xml:space="preserve">-->
+                                    <!--            <g>-->
+                                    <!--                <g>-->
+                                    <!--                    <path d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4-->
+                                    <!--                    l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472-->
+                                    <!--                    l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z" />-->
+                                    <!--                </g>-->
+                                    <!--            </g>-->
+                                    <!--        </svg>-->
+                                    <!--        <?php echo html_escape($this->common->languageTranslator('ltr_student_manager')); ?>-->
+                                    <!--    </a>-->
+                                    <!--</div>-->
                                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                                         <a class="edu_quick_links light_voilate_bg" target="_blank" href="<?php echo base_url(); ?>admin/teacher-manage">
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.011 448.011" style="enable-background:new 0 0 448.011 448.011;" xml:space="preserve">
@@ -520,20 +520,20 @@
                                             <?php echo html_escape($this->common->languageTranslator('ltr_gallery_manager')); ?>
                                         </a>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
-                                        <a class="edu_quick_links light_red_bg" target="_blank" href="<?php echo base_url(); ?>admin/video-manage">
-                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.011 448.011" style="enable-background:new 0 0 448.011 448.011;" xml:space="preserve">
-                                                <g>
-                                                    <g>
-                                                        <path d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4
-                                                        l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472
-                                                        l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                            <?php echo html_escape($this->common->languageTranslator('ltr_video_lecture')); ?>
-                                        </a>
-                                    </div>
+                                    <!--<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">-->
+                                    <!--    <a class="edu_quick_links light_red_bg" target="_blank" href="<?php echo base_url(); ?>admin/video-manage">-->
+                                    <!--        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.011 448.011" style="enable-background:new 0 0 448.011 448.011;" xml:space="preserve">-->
+                                    <!--            <g>-->
+                                    <!--                <g>-->
+                                    <!--                    <path d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4-->
+                                    <!--                    l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472-->
+                                    <!--                    l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z" />-->
+                                    <!--                </g>-->
+                                    <!--            </g>-->
+                                    <!--        </svg>-->
+                                    <!--        <?php echo html_escape($this->common->languageTranslator('ltr_video_lecture')); ?>-->
+                                    <!--    </a>-->
+                                    <!--</div>-->
                                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                                         <a class="edu_quick_links light_yellow_bg" target="_blank" href="<?php echo base_url(); ?>admin/vacancy-manage">
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.011 448.011" style="enable-background:new 0 0 448.011 448.011;" xml:space="preserve">

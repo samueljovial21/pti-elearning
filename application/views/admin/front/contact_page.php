@@ -64,12 +64,12 @@
 							    <input type="text" class="form-control" name="linkedin" value="<?php echo html_escape($contact_Details['0']['linkedin']);?>" placeholder="<?php echo html_escape($this->common->languageTranslator('ltr_linked_in'));?>" data-valid="url" data-error="Please use http or https in URL." data-symb="no">
 							</div>
 						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-						    <div class="form-group">
-								<label><?php echo html_escape($this->common->languageTranslator('ltr_google_API'));?></label>
-							    <input  type="text" class="form-control" name="map_api" value="<?php echo html_escape($contact_Details['0']['map_api']);?>" placeholder="<?php echo html_escape($this->common->languageTranslator('ltr_google_API'));?>">
-							</div>
-						</div>
+						<!--<div class="col-lg-12 col-md-12 col-sm-12 col-12">-->
+						<!--    <div class="form-group">-->
+						<!--		<label><?php echo html_escape($this->common->languageTranslator('ltr_google_API'));?></label>-->
+						<!--	    <input  type="text" class="form-control" name="map_api" value="<?php echo html_escape($contact_Details['0']['map_api']);?>" placeholder="<?php echo html_escape($this->common->languageTranslator('ltr_google_API'));?>">-->
+						<!--	</div>-->
+						<!--</div>-->
 						<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 						    <div class="form-group">
 								<label><?php echo html_escape($this->common->languageTranslator('ltr_address'));?><sup>*</sup></label>
