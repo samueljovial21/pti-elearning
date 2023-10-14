@@ -14,6 +14,6 @@ V1.2 : Final
 - Added Student Features
 
 ## Additional
-Website Demo : [Demo Video](https://drive.google.com/file/d/1I_YW5s6fpMEkpsGk8jB7YuKIt22WmR0s/view?usp=sharing)
+Website Demo : [Demo Video](https://drive.google.com/file/d/1I_YW5s6fpMEkpsGk8jB7YuKIt22WmR0s/view?usp=sharing) </br>
 <img src="portfolio-2.jpg">
 
